@@ -1,0 +1,562 @@
+2017-05-16 14:46:32  [ main:0 ] - [ DEBUG ]  CookieSpec selected: default
+  2017-05-16 14:46:32  [ main:43 ] - [ DEBUG ]  Auth cache not set in the context
+  2017-05-16 14:46:32  [ main:44 ] - [ DEBUG ]  Connection request: [route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+  2017-05-16 14:46:32  [ main:61 ] - [ DEBUG ]  Connection leased: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 14:46:32  [ main:63 ] - [ DEBUG ]  Opening connection {s}->https://www.baidu.com:443
+  2017-05-16 14:46:32  [ main:320 ] - [ DEBUG ]  Connecting to www.baidu.com/61.135.169.121:443
+  2017-05-16 14:46:32  [ main:320 ] - [ DEBUG ]  Connecting socket to www.baidu.com/61.135.169.121:443 with timeout 0
+  2017-05-16 14:46:33  [ main:1440 ] - [ DEBUG ]  Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+  2017-05-16 14:46:33  [ main:1440 ] - [ DEBUG ]  Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+  2017-05-16 14:46:33  [ main:1441 ] - [ DEBUG ]  Starting handshake
+  2017-05-16 14:46:34  [ main:1528 ] - [ DEBUG ]  Secure session established
+  2017-05-16 14:46:34  [ main:1529 ] - [ DEBUG ]   negotiated protocol: TLSv1.2
+  2017-05-16 14:46:34  [ main:1529 ] - [ DEBUG ]   negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  2017-05-16 14:46:34  [ main:1530 ] - [ DEBUG ]   peer principal: CN=baidu.com, OU=service operation department., O="BeiJing Baidu Netcom Science Technology Co., Ltd", L=beijing, ST=beijing, C=CN
+  2017-05-16 14:46:34  [ main:1531 ] - [ DEBUG ]   peer alternative names: [*.baidu.com, *.baifubao.com, *.bdstatic.com, *.hao123.com, *.nuomi.com, *.bce.baidu.com, *.eyun.baidu.com, *.map.baidu.com, baidu.com, baifubao.com, www.baidu.cn, www.baidu.com.cn, click.hm.baidu.com, log.hm.baidu.com, cm.pos.baidu.com, wn.pos.baidu.com, update.pan.baidu.com, mct.y.nuomi.com]
+  2017-05-16 14:46:34  [ main:1531 ] - [ DEBUG ]   issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  2017-05-16 14:46:34  [ main:1541 ] - [ DEBUG ]  Connection established 10.1.16.24:7006<->61.135.169.121:443
+  2017-05-16 14:46:34  [ main:1541 ] - [ DEBUG ]  Executing request GET / HTTP/1.1
+  2017-05-16 14:46:34  [ main:1541 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+  2017-05-16 14:46:34  [ main:1561 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+  2017-05-16 14:46:34  [ main:1563 ] - [ DEBUG ]  http-outgoing-0 >> GET / HTTP/1.1
+  2017-05-16 14:46:34  [ main:1564 ] - [ DEBUG ]  http-outgoing-0 >> Host: www.baidu.com
+  2017-05-16 14:46:34  [ main:1564 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+  2017-05-16 14:46:34  [ main:1564 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+  2017-05-16 14:46:34  [ main:1565 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+  2017-05-16 14:46:34  [ main:1565 ] - [ DEBUG ]  http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+  2017-05-16 14:46:34  [ main:1566 ] - [ DEBUG ]  http-outgoing-0 >> "Host: www.baidu.com[\r][\n]"
+  2017-05-16 14:46:34  [ main:1566 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+  2017-05-16 14:46:34  [ main:1567 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+  2017-05-16 14:46:34  [ main:1567 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+  2017-05-16 14:46:34  [ main:1567 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+  2017-05-16 14:46:34  [ main:1576 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+  2017-05-16 14:46:34  [ main:1577 ] - [ DEBUG ]  http-outgoing-0 << "Server: bfe/1.0.8.18[\r][\n]"
+  2017-05-16 14:46:34  [ main:1578 ] - [ DEBUG ]  http-outgoing-0 << "Date: Tue, 16 May 2017 06:46:35 GMT[\r][\n]"
+  2017-05-16 14:46:34  [ main:1578 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+  2017-05-16 14:46:34  [ main:1579 ] - [ DEBUG ]  http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+  2017-05-16 14:46:34  [ main:1579 ] - [ DEBUG ]  http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+  2017-05-16 14:46:34  [ main:1580 ] - [ DEBUG ]  http-outgoing-0 << "Last-Modified: Mon, 23 Jan 2017 13:23:49 GMT[\r][\n]"
+  2017-05-16 14:46:34  [ main:1580 ] - [ DEBUG ]  http-outgoing-0 << "Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform[\r][\n]"
+  2017-05-16 14:46:34  [ main:1580 ] - [ DEBUG ]  http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+  2017-05-16 14:46:34  [ main:1581 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:46:34  [ main:1581 ] - [ DEBUG ]  http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+  2017-05-16 14:46:34  [ main:1581 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: __bsi=15894721300213123345_00_73_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:46:40 GMT; domain=www.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:46:34  [ main:1582 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 14:46:34  [ main:1584 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 200 OK
+  2017-05-16 14:46:34  [ main:1585 ] - [ DEBUG ]  http-outgoing-0 << Server: bfe/1.0.8.18
+  2017-05-16 14:46:34  [ main:1585 ] - [ DEBUG ]  http-outgoing-0 << Date: Tue, 16 May 2017 06:46:35 GMT
+  2017-05-16 14:46:34  [ main:1586 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: text/html
+  2017-05-16 14:46:34  [ main:1586 ] - [ DEBUG ]  http-outgoing-0 << Transfer-Encoding: chunked
+  2017-05-16 14:46:34  [ main:1586 ] - [ DEBUG ]  http-outgoing-0 << Connection: keep-alive
+  2017-05-16 14:46:34  [ main:1587 ] - [ DEBUG ]  http-outgoing-0 << Last-Modified: Mon, 23 Jan 2017 13:23:49 GMT
+  2017-05-16 14:46:34  [ main:1587 ] - [ DEBUG ]  http-outgoing-0 << Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  2017-05-16 14:46:34  [ main:1587 ] - [ DEBUG ]  http-outgoing-0 << Pragma: no-cache
+  2017-05-16 14:46:34  [ main:1588 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/
+  2017-05-16 14:46:34  [ main:1588 ] - [ DEBUG ]  http-outgoing-0 << Content-Encoding: gzip
+  2017-05-16 14:46:34  [ main:1588 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: __bsi=15894721300213123345_00_73_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:46:40 GMT; domain=www.baidu.com; path=/
+  2017-05-16 14:46:34  [ main:1604 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+  2017-05-16 14:46:34  [ main:1622 ] - [ DEBUG ]  Cookie accepted [BDORZ="27315", version:0, domain:baidu.com, path:/, expiry:null]
+  2017-05-16 14:46:34  [ main:1642 ] - [ DEBUG ]  Cookie accepted [__bsi="15894721300213123345_00_73_N_N_2_0303_C02F_N_N_N_0", version:0, domain:www.baidu.com, path:/, expiry:Tue May 16 14:46:40 CST 2017]
+  2017-05-16 14:47:45  [ main:0 ] - [ DEBUG ]  CookieSpec selected: default
+  2017-05-16 14:47:45  [ main:11 ] - [ DEBUG ]  Auth cache not set in the context
+  2017-05-16 14:47:45  [ main:13 ] - [ DEBUG ]  Connection request: [route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+  2017-05-16 14:47:45  [ main:28 ] - [ DEBUG ]  Connection leased: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 14:47:45  [ main:30 ] - [ DEBUG ]  Opening connection {s}->https://www.baidu.com:443
+  2017-05-16 14:47:45  [ main:48 ] - [ DEBUG ]  Connecting to www.baidu.com/61.135.169.121:443
+  2017-05-16 14:47:45  [ main:49 ] - [ DEBUG ]  Connecting socket to www.baidu.com/61.135.169.121:443 with timeout 0
+  2017-05-16 14:47:45  [ main:884 ] - [ DEBUG ]  Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+  2017-05-16 14:47:45  [ main:884 ] - [ DEBUG ]  Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+  2017-05-16 14:47:45  [ main:885 ] - [ DEBUG ]  Starting handshake
+  2017-05-16 14:47:46  [ main:955 ] - [ DEBUG ]  Secure session established
+  2017-05-16 14:47:46  [ main:956 ] - [ DEBUG ]   negotiated protocol: TLSv1.2
+  2017-05-16 14:47:46  [ main:956 ] - [ DEBUG ]   negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  2017-05-16 14:47:46  [ main:956 ] - [ DEBUG ]   peer principal: CN=baidu.com, OU=service operation department., O="BeiJing Baidu Netcom Science Technology Co., Ltd", L=beijing, ST=beijing, C=CN
+  2017-05-16 14:47:46  [ main:957 ] - [ DEBUG ]   peer alternative names: [*.baidu.com, *.baifubao.com, *.bdstatic.com, *.hao123.com, *.nuomi.com, *.bce.baidu.com, *.eyun.baidu.com, *.map.baidu.com, baidu.com, baifubao.com, www.baidu.cn, www.baidu.com.cn, click.hm.baidu.com, log.hm.baidu.com, cm.pos.baidu.com, wn.pos.baidu.com, update.pan.baidu.com, mct.y.nuomi.com]
+  2017-05-16 14:47:46  [ main:957 ] - [ DEBUG ]   issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  2017-05-16 14:47:46  [ main:961 ] - [ DEBUG ]  Connection established 10.1.16.24:7040<->61.135.169.121:443
+  2017-05-16 14:47:46  [ main:962 ] - [ DEBUG ]  Executing request GET / HTTP/1.1
+  2017-05-16 14:47:46  [ main:962 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+  2017-05-16 14:47:46  [ main:962 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+  2017-05-16 14:47:46  [ main:963 ] - [ DEBUG ]  http-outgoing-0 >> GET / HTTP/1.1
+  2017-05-16 14:47:46  [ main:964 ] - [ DEBUG ]  http-outgoing-0 >> Host: www.baidu.com
+  2017-05-16 14:47:46  [ main:964 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+  2017-05-16 14:47:46  [ main:964 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+  2017-05-16 14:47:46  [ main:965 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+  2017-05-16 14:47:46  [ main:965 ] - [ DEBUG ]  http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+  2017-05-16 14:47:46  [ main:965 ] - [ DEBUG ]  http-outgoing-0 >> "Host: www.baidu.com[\r][\n]"
+  2017-05-16 14:47:46  [ main:965 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+  2017-05-16 14:47:46  [ main:966 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+  2017-05-16 14:47:46  [ main:966 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+  2017-05-16 14:47:46  [ main:966 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+  2017-05-16 14:47:46  [ main:977 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+  2017-05-16 14:47:46  [ main:978 ] - [ DEBUG ]  http-outgoing-0 << "Server: bfe/1.0.8.18[\r][\n]"
+  2017-05-16 14:47:46  [ main:978 ] - [ DEBUG ]  http-outgoing-0 << "Date: Tue, 16 May 2017 06:47:47 GMT[\r][\n]"
+  2017-05-16 14:47:46  [ main:978 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+  2017-05-16 14:47:46  [ main:979 ] - [ DEBUG ]  http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+  2017-05-16 14:47:46  [ main:979 ] - [ DEBUG ]  http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+  2017-05-16 14:47:46  [ main:980 ] - [ DEBUG ]  http-outgoing-0 << "Last-Modified: Mon, 23 Jan 2017 13:23:46 GMT[\r][\n]"
+  2017-05-16 14:47:46  [ main:980 ] - [ DEBUG ]  http-outgoing-0 << "Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform[\r][\n]"
+  2017-05-16 14:47:46  [ main:980 ] - [ DEBUG ]  http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+  2017-05-16 14:47:46  [ main:981 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:47:46  [ main:981 ] - [ DEBUG ]  http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+  2017-05-16 14:47:46  [ main:981 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: __bsi=12518267149466214722_00_55_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:47:52 GMT; domain=www.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:47:46  [ main:981 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 14:47:46  [ main:985 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 200 OK
+  2017-05-16 14:47:46  [ main:985 ] - [ DEBUG ]  http-outgoing-0 << Server: bfe/1.0.8.18
+  2017-05-16 14:47:46  [ main:985 ] - [ DEBUG ]  http-outgoing-0 << Date: Tue, 16 May 2017 06:47:47 GMT
+  2017-05-16 14:47:46  [ main:986 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: text/html
+  2017-05-16 14:47:46  [ main:986 ] - [ DEBUG ]  http-outgoing-0 << Transfer-Encoding: chunked
+  2017-05-16 14:47:46  [ main:986 ] - [ DEBUG ]  http-outgoing-0 << Connection: keep-alive
+  2017-05-16 14:47:46  [ main:987 ] - [ DEBUG ]  http-outgoing-0 << Last-Modified: Mon, 23 Jan 2017 13:23:46 GMT
+  2017-05-16 14:47:46  [ main:987 ] - [ DEBUG ]  http-outgoing-0 << Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  2017-05-16 14:47:46  [ main:987 ] - [ DEBUG ]  http-outgoing-0 << Pragma: no-cache
+  2017-05-16 14:47:46  [ main:987 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/
+  2017-05-16 14:47:46  [ main:988 ] - [ DEBUG ]  http-outgoing-0 << Content-Encoding: gzip
+  2017-05-16 14:47:46  [ main:988 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: __bsi=12518267149466214722_00_55_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:47:52 GMT; domain=www.baidu.com; path=/
+  2017-05-16 14:47:46  [ main:998 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+  2017-05-16 14:47:46  [ main:1003 ] - [ DEBUG ]  Cookie accepted [BDORZ="27315", version:0, domain:baidu.com, path:/, expiry:null]
+  2017-05-16 14:47:46  [ main:1009 ] - [ DEBUG ]  Cookie accepted [__bsi="12518267149466214722_00_55_N_N_2_0303_C02F_N_N_N_0", version:0, domain:www.baidu.com, path:/, expiry:Tue May 16 14:47:52 CST 2017]
+  2017-05-16 14:52:20  [ main:0 ] - [ DEBUG ]  CookieSpec selected: default
+  2017-05-16 14:52:20  [ main:12 ] - [ DEBUG ]  Auth cache not set in the context
+  2017-05-16 14:52:20  [ main:13 ] - [ DEBUG ]  Connection request: [route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+  2017-05-16 14:52:20  [ main:28 ] - [ DEBUG ]  Connection leased: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 14:52:20  [ main:30 ] - [ DEBUG ]  Opening connection {s}->https://www.baidu.com:443
+  2017-05-16 14:52:20  [ main:59 ] - [ DEBUG ]  Connecting to www.baidu.com/61.135.169.121:443
+  2017-05-16 14:52:20  [ main:60 ] - [ DEBUG ]  Connecting socket to www.baidu.com/61.135.169.121:443 with timeout 0
+  2017-05-16 14:52:21  [ main:320 ] - [ DEBUG ]  Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+  2017-05-16 14:52:21  [ main:320 ] - [ DEBUG ]  Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+  2017-05-16 14:52:21  [ main:321 ] - [ DEBUG ]  Starting handshake
+  2017-05-16 14:52:21  [ main:381 ] - [ DEBUG ]  Secure session established
+  2017-05-16 14:52:21  [ main:381 ] - [ DEBUG ]   negotiated protocol: TLSv1.2
+  2017-05-16 14:52:21  [ main:382 ] - [ DEBUG ]   negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  2017-05-16 14:52:21  [ main:382 ] - [ DEBUG ]   peer principal: CN=baidu.com, OU=service operation department., O="BeiJing Baidu Netcom Science Technology Co., Ltd", L=beijing, ST=beijing, C=CN
+  2017-05-16 14:52:21  [ main:383 ] - [ DEBUG ]   peer alternative names: [*.baidu.com, *.baifubao.com, *.bdstatic.com, *.hao123.com, *.nuomi.com, *.bce.baidu.com, *.eyun.baidu.com, *.map.baidu.com, baidu.com, baifubao.com, www.baidu.cn, www.baidu.com.cn, click.hm.baidu.com, log.hm.baidu.com, cm.pos.baidu.com, wn.pos.baidu.com, update.pan.baidu.com, mct.y.nuomi.com]
+  2017-05-16 14:52:21  [ main:383 ] - [ DEBUG ]   issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  2017-05-16 14:52:21  [ main:386 ] - [ DEBUG ]  Connection established 10.1.16.24:7149<->61.135.169.121:443
+  2017-05-16 14:52:21  [ main:387 ] - [ DEBUG ]  Executing request GET / HTTP/1.1
+  2017-05-16 14:52:21  [ main:387 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+  2017-05-16 14:52:21  [ main:387 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+  2017-05-16 14:52:21  [ main:388 ] - [ DEBUG ]  http-outgoing-0 >> GET / HTTP/1.1
+  2017-05-16 14:52:21  [ main:389 ] - [ DEBUG ]  http-outgoing-0 >> Host: www.baidu.com
+  2017-05-16 14:52:21  [ main:389 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+  2017-05-16 14:52:21  [ main:389 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+  2017-05-16 14:52:21  [ main:389 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+  2017-05-16 14:52:21  [ main:390 ] - [ DEBUG ]  http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+  2017-05-16 14:52:21  [ main:390 ] - [ DEBUG ]  http-outgoing-0 >> "Host: www.baidu.com[\r][\n]"
+  2017-05-16 14:52:21  [ main:390 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+  2017-05-16 14:52:21  [ main:390 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+  2017-05-16 14:52:21  [ main:391 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+  2017-05-16 14:52:21  [ main:391 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+  2017-05-16 14:52:21  [ main:408 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+  2017-05-16 14:52:21  [ main:409 ] - [ DEBUG ]  http-outgoing-0 << "Server: bfe/1.0.8.18[\r][\n]"
+  2017-05-16 14:52:21  [ main:409 ] - [ DEBUG ]  http-outgoing-0 << "Date: Tue, 16 May 2017 06:52:22 GMT[\r][\n]"
+  2017-05-16 14:52:21  [ main:410 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+  2017-05-16 14:52:21  [ main:410 ] - [ DEBUG ]  http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+  2017-05-16 14:52:21  [ main:410 ] - [ DEBUG ]  http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+  2017-05-16 14:52:21  [ main:410 ] - [ DEBUG ]  http-outgoing-0 << "Last-Modified: Mon, 23 Jan 2017 13:23:47 GMT[\r][\n]"
+  2017-05-16 14:52:21  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform[\r][\n]"
+  2017-05-16 14:52:21  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+  2017-05-16 14:52:21  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:52:21  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+  2017-05-16 14:52:21  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: __bsi=16238162888349400546_00_45_N_N_3_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:52:27 GMT; domain=www.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:52:21  [ main:412 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 14:52:21  [ main:412 ] - [ DEBUG ]  http-outgoing-0 << "499[\r][\n]"
+  2017-05-16 14:52:21  [ main:413 ] - [ DEBUG ]  http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d]Vok[0xdb]F[0x18]_[0xe8]w[0xb8]j$i[0x9][0xb6]b[0x9b][0xd0],[0x96][0x14][0xbc]4[0x83]PX[0xcb][0x9a][0xc0][0xf2][0xca][0x9c][0xa4][0x93]u[0x89][0xa4]Su'+[0xee][0xab][0x5][0xd6][0xb1][0xb1]u[0xd9][0xe8][0xfe][0xb0]u[0xb0]1[0xb6]f/[0x6][0xcd]X`%][0xda]/c[0xa5][0xc9][0xab]}[0x85]='[0x9d]c;q[0xe8][0x8c]A[0xba][0xe7][0x9e][0xfb]=[0xbf][0xe7][0xef][0xc9][0xb8]v[0xeb][0xce][0xf2][0xda][0xc6][0xdd][0x15][0xe4][0x8b]0[0xb0][0xae]^1[0xae]U*[0xf7][0xd6]Zk[0xeb][0xf7][0xd0][0x9d][0xdb][0x95][0x8a]e[0x14]rd[0xf8][0x4][0xbb][0x96][0x11][0x12][0x81]AS[0xc4][0x15]r?[0xa5]][0xd3]a[0x91] [0x91][0xa8][0x88]^L[0x90]Z[0x98][0x82]l[0xb]][0x1e]k:>N8[0x11]f*[0xbc][0xca][0xc2][0xc5][0xd3][0x1f]T[0xd6][[0x95]e[0x16][0xc6]XP;[0x18][0x2][0xac][0xae][0x98]+n[0x87][0xa8][0x3][0x3]X[0x1c]d[0xb8][0xc7]Q[0x84]Cb&[0xc4]#IB[0x12][0xcb][0x8]h[0xb4][0x85][0x12][0x12][0x98]\[0xf4][0x2][0xc2]}B[0x4][0x92]lJ[0x16][0xe][0xe7][0xc8][0x7]eSr[0xe6][0x8b][0xba][0xce]y[0xad]j[0xbb]\[0x80]E[0xa7][0xea][0xb0]P[0x9f]'[0xef][0xd5][0xec][0xcd][0xfb][0xb][0xad][0xd6][0xfa]FX[0xd0]a[0x1b][0x8d][0xdb]z[0xa2]gY[0xa6];[0xd8][0xf1][0x89]n[0xbb],y[0xa0][0xdb][0x98][0xba]i5[0xa4]Q[0x15] -CP[0x11][0x10][0xeb][0xf5][0xf7]/[0xf3][0xc3][0xa7][0xfd][0xe7][0x1f][0xf6][0x9f][0xf6][0xef]?[0x9f][0xf7][0x8f]~[0xce][0xf7][0xff]|[0xfd][0xd3]o[0xa7];[0x8f][\r][0xbd]T1[0xf4]"p[0xc8][0xb0][0x99][0xdb]C[0x92][0xac][0xf9][0xd6][0x1c][0xfc][0x1c][0xc7]B[0x86]K[0xbb][0x88][0xba]f[0x96][0xe0]8[0x6]_[0xce][0x4][0xea][0x88][0xdc]v[0x2][0xcc][0xb9])[0x5][0xed]q[0xb5]r[0x83][0xb7]=[0x96][0x84][0xea][0xe4][0xa8][0xe8][0x9c]6X[0x9]:[0xa0]F[0xc3][0xe][0xf2][0xa9]K<[0xe6][0xa4][0xdc][0x14]IJ[0x10]O[0x1c]S[0x97][0xfe]VK[0x1f]eP@[\r][0xfc]n[0x7][0xac][0xc3]j[0xd5]8[0xea][0xa0][0x8c][0xba][0xc2]7[0xeb]7[0xe7][0x90]Oh[0xc7][0x17]f[0xad][0xfe]6[0xc0][0xe9]@[0x11][0x1e][0x92][0x83]t[0xa4]x[0x16][0xf9][0xf1][0x10]v[0x4]e[0xd1][0x5]d[0xae]<[0xf2]$i[0x1a][0xc5][0xa9][0xca][0x16][0x90]rIT&[0xb7][0x88]x[0x1b]x[0x10][0xd4][0xc5]AJ[0xcc][0xda][0xe5][0xba]t[0xa0]S[0x96][0xd8][0xa5][0x98][0x9e][0x82]Z[0xb8][0x1c]*[0xe1][0xdd][0xb6][0x1d][0xbf][0xd9][0xa4][0xd4][0xa3][0xee][0xf6][0x9b][0x15]E[0xa4]t[0x8a][0xc0]Z[0x6][0x8f]q[0xa4][0xdc][0xd7][0xec][0xe][0xe2]m[0x1a][0xb][0xc8][0x93]f[0xa9]@@[0x4][0xb7][0xb2]2[0x4][0x99][0xab][0x14][0xb][0xa5][0x12][0x6][0x85]x; QG&b~[0x1e][0xe1]T0[0x88]Q[0x1c][0x10]AL[0xe6]A[0xc4]AP[0xe6][0xf5][0xec][0xcd]2tit[0x82]i[D[0xa3][0xa6][0x8b][0x8e][0xe1][0xa9][0x1d]R![0x13][0xc9]S[0xc5]|[0xb4][0xc2][0xc7][0xa8][0xc3]ymhq`[0x7]*B[0xd5][0xa3][0xaa][0xc][0xf5]P[0x85][0x9e][0xca]D[0xc2][0xfc][0x18]4$[0xf4]cD2>,[0xbc][0xd2]y[0xb1][0xd9][0x16][0x89][0xdc]P[0x16][0xc3][0x8]w[0xad][0xe3]o[0xf7]O[0xbf]{a[0xe8]x[0x1c]B[0xf6][0xb4][0xac]][0x1f][0xb3]Z[0xbd]!;z[0x4][0xa3][0x14][0x8e][0xa2][0x94][0x92][0xb]([0x0][0x12][0xe2]x"[0xf][0x90][0x8f][0x2][0xe4]?[0xee][0xe7]O^N[0x2][0xe8]N<[0xde][0x85]fc[0xa3][0x0]'{[0x1f][0x9f][0xfe][0xf2][0xd5]$[0x0]A[0x89][0x8d]'[0x82][0x14];c [0x7][0x7][0xf9][0x97]{%H[0xc4][0xb8][0x93]@%[0x8d][0xc7]E[0x85]e[0xd8][0xd2][0xe5][0x18][0x83][0x8e][0x86][0x11][0xd6][0xa1][0xde]R[0xf1]6[0x8d][0xc3][0xb8])[0xe2][0xc0][0xc][0xa3][0xe2]5-[0xe6][0xe4]T[0xa3]5U[0x17][0xfe]cCa[0xaa][0xee]M5[0xbc]aoN5[0xdc][0xda]Y[0xac][0xb]4[0xc5]0[0xb0]a0[0xbe][0xc8][0x8f][0xbe])[0xf9][0xe9]#[0x4][0x15]S[0x17][0xa6]O[0x8][0xd7]F5K[0xa8] [0xd7]g[0x6]5[0xa1][0xc9])[0xfd]?[0x99]+[0xd6][0xa9]93[0x8b]H[0xe4]0[0x97][0xac][0xbf][0xbf][0xba][0xc][0xfd][0xc0]"@[0xbe][0x9e][0xd1][0xc8]eY5`[0xe]Lz[0x16]Ue[0xcd][0xcd][0xa2][0xb]bNp[0xe2][0xf8][0xc8]4M[0xa4]ih[0x9]iK[0x1a]ZD[0xda][0xb4]vc[0x16]iC_[0xcd][0x9a][0x14][0xcc]h[0xa5][0xbf][0x1a][0x14]h[0xe1][0xb0][0xa6]<[0xd6][0x2][[0x1b][0xf1]y[0xe6]F[0xf3][0xea][0x15]t[0xee][0x7][0x9d]x.M[0xe7][0x87]n[0xc8][0x12][0xa2][0x9f]E[0xd4]N([0x85][0x9b]OY[0x80][0x15]*.8Ss)[0x8f][0x3][0xdc][D68[0xb7][0xd5][0xd4][0xac][0xe3]'[0x7][0xf9][0xaf]?[0xf4][0xf][0xf7][0xf2][0xc7];*[0xe4][0xe5]X[0x9e][0xd8][0x83][0x9e]Xf[0x11][0xd4][0x8a]j[0xc9]b[0x99][0xc1]:[0x96]}[0x1f][0xf8][0x17][0xaa][0xc8][0x87]1<,J+[0xf8]W[0xff][0xf0][0x8b]r,L*b[0x9a][0x8c]([0xb7]l[0x6][0xf3][0xfd][0x1d]yu*b[0xf1][0xc0][0x92][0x13][[0xd3][0xe][0x8b]{[0xcd][0xfa]\[0xed][0xe6]td[0xf3][0xb8]Y[0xe8][0x95][0xaf][0x83][0x82][0x98]X[0xf]n*z[0xba][0xd5]?z[0xf5][0xfa][0xeb][0xdf]K"[0xf9][0xa7][0x8f][0xf2]W[0xf]O[0x9e][0x15][0xe3][0xa1]D8?g6)[0x8e]zt[0xc8]MW[0x81]u[0xe2][0x8a]G[0x88]kcg[0xcb]:[0xfe]h[0xf7]do'[0xdf]}t[0xfa][0xf4][0x13][0xc9][0xb7]D[0xea][0x1f][0xfe][0xb1][0xba]|[0xf7][0xe4][0xd9][0xce]\[0x3][0xa8]6[0xf2][0xdd][0xbf][0x7][0x16][0xe4]ez[0xd9][0xed][0xd9][0xe1][0xb2][0xcb][0xc0][][0xba]<[0x9e][0x89][0xc1]J~[0x12][0xc8]M[0xf5][0xe5][0xf5][0x1f]0[0xc][0x81][0x9a][0x8b][0x9][0x0][0x0][\r][\n]"
+  2017-05-16 14:52:21  [ main:415 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 200 OK
+  2017-05-16 14:52:21  [ main:416 ] - [ DEBUG ]  http-outgoing-0 << Server: bfe/1.0.8.18
+  2017-05-16 14:52:21  [ main:416 ] - [ DEBUG ]  http-outgoing-0 << Date: Tue, 16 May 2017 06:52:22 GMT
+  2017-05-16 14:52:21  [ main:416 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: text/html
+  2017-05-16 14:52:21  [ main:416 ] - [ DEBUG ]  http-outgoing-0 << Transfer-Encoding: chunked
+  2017-05-16 14:52:21  [ main:417 ] - [ DEBUG ]  http-outgoing-0 << Connection: keep-alive
+  2017-05-16 14:52:21  [ main:417 ] - [ DEBUG ]  http-outgoing-0 << Last-Modified: Mon, 23 Jan 2017 13:23:47 GMT
+  2017-05-16 14:52:21  [ main:417 ] - [ DEBUG ]  http-outgoing-0 << Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  2017-05-16 14:52:21  [ main:417 ] - [ DEBUG ]  http-outgoing-0 << Pragma: no-cache
+  2017-05-16 14:52:21  [ main:417 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/
+  2017-05-16 14:52:21  [ main:417 ] - [ DEBUG ]  http-outgoing-0 << Content-Encoding: gzip
+  2017-05-16 14:52:21  [ main:418 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: __bsi=16238162888349400546_00_45_N_N_3_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:52:27 GMT; domain=www.baidu.com; path=/
+  2017-05-16 14:52:21  [ main:424 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+  2017-05-16 14:52:21  [ main:430 ] - [ DEBUG ]  Cookie accepted [BDORZ="27315", version:0, domain:baidu.com, path:/, expiry:null]
+  2017-05-16 14:52:21  [ main:436 ] - [ DEBUG ]  Cookie accepted [__bsi="16238162888349400546_00_45_N_N_3_0303_C02F_N_N_N_0", version:0, domain:www.baidu.com, path:/, expiry:Tue May 16 14:52:27 CST 2017]
+  2017-05-16 14:53:12  [ main:0 ] - [ DEBUG ]  CookieSpec selected: default
+  2017-05-16 14:53:12  [ main:11 ] - [ DEBUG ]  Auth cache not set in the context
+  2017-05-16 14:53:12  [ main:13 ] - [ DEBUG ]  Connection request: [route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+  2017-05-16 14:53:12  [ main:28 ] - [ DEBUG ]  Connection leased: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 14:53:12  [ main:30 ] - [ DEBUG ]  Opening connection {s}->https://www.baidu.com:443
+  2017-05-16 14:53:12  [ main:37 ] - [ DEBUG ]  Connecting to www.baidu.com/61.135.169.121:443
+  2017-05-16 14:53:12  [ main:37 ] - [ DEBUG ]  Connecting socket to www.baidu.com/61.135.169.121:443 with timeout 0
+  2017-05-16 14:53:12  [ main:339 ] - [ DEBUG ]  Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+  2017-05-16 14:53:12  [ main:340 ] - [ DEBUG ]  Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+  2017-05-16 14:53:12  [ main:340 ] - [ DEBUG ]  Starting handshake
+  2017-05-16 14:53:12  [ main:535 ] - [ DEBUG ]  Secure session established
+  2017-05-16 14:53:12  [ main:536 ] - [ DEBUG ]   negotiated protocol: TLSv1.2
+  2017-05-16 14:53:12  [ main:537 ] - [ DEBUG ]   negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  2017-05-16 14:53:12  [ main:538 ] - [ DEBUG ]   peer principal: CN=baidu.com, OU=service operation department., O="BeiJing Baidu Netcom Science Technology Co., Ltd", L=beijing, ST=beijing, C=CN
+  2017-05-16 14:53:12  [ main:539 ] - [ DEBUG ]   peer alternative names: [*.baidu.com, *.baifubao.com, *.bdstatic.com, *.hao123.com, *.nuomi.com, *.bce.baidu.com, *.eyun.baidu.com, *.map.baidu.com, baidu.com, baifubao.com, www.baidu.cn, www.baidu.com.cn, click.hm.baidu.com, log.hm.baidu.com, cm.pos.baidu.com, wn.pos.baidu.com, update.pan.baidu.com, mct.y.nuomi.com]
+  2017-05-16 14:53:12  [ main:540 ] - [ DEBUG ]   issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  2017-05-16 14:53:12  [ main:551 ] - [ DEBUG ]  Connection established 10.1.16.24:7158<->61.135.169.121:443
+  2017-05-16 14:53:12  [ main:553 ] - [ DEBUG ]  Executing request GET / HTTP/1.1
+  2017-05-16 14:53:12  [ main:554 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+  2017-05-16 14:53:12  [ main:556 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+  2017-05-16 14:53:12  [ main:559 ] - [ DEBUG ]  http-outgoing-0 >> GET / HTTP/1.1
+  2017-05-16 14:53:12  [ main:559 ] - [ DEBUG ]  http-outgoing-0 >> Host: www.baidu.com
+  2017-05-16 14:53:12  [ main:560 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+  2017-05-16 14:53:12  [ main:560 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+  2017-05-16 14:53:12  [ main:560 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+  2017-05-16 14:53:12  [ main:561 ] - [ DEBUG ]  http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+  2017-05-16 14:53:12  [ main:561 ] - [ DEBUG ]  http-outgoing-0 >> "Host: www.baidu.com[\r][\n]"
+  2017-05-16 14:53:12  [ main:561 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+  2017-05-16 14:53:12  [ main:562 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+  2017-05-16 14:53:12  [ main:562 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+  2017-05-16 14:53:12  [ main:562 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+  2017-05-16 14:53:13  [ main:585 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+  2017-05-16 14:53:13  [ main:586 ] - [ DEBUG ]  http-outgoing-0 << "Server: bfe/1.0.8.18[\r][\n]"
+  2017-05-16 14:53:13  [ main:586 ] - [ DEBUG ]  http-outgoing-0 << "Date: Tue, 16 May 2017 06:53:14 GMT[\r][\n]"
+  2017-05-16 14:53:13  [ main:587 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+  2017-05-16 14:53:13  [ main:587 ] - [ DEBUG ]  http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+  2017-05-16 14:53:13  [ main:587 ] - [ DEBUG ]  http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+  2017-05-16 14:53:13  [ main:588 ] - [ DEBUG ]  http-outgoing-0 << "Last-Modified: Mon, 23 Jan 2017 13:23:47 GMT[\r][\n]"
+  2017-05-16 14:53:13  [ main:588 ] - [ DEBUG ]  http-outgoing-0 << "Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform[\r][\n]"
+  2017-05-16 14:53:13  [ main:588 ] - [ DEBUG ]  http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+  2017-05-16 14:53:13  [ main:588 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:53:13  [ main:588 ] - [ DEBUG ]  http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+  2017-05-16 14:53:13  [ main:589 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: __bsi=16378640784662298401_00_152_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:53:19 GMT; domain=www.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:53:13  [ main:589 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 14:53:13  [ main:589 ] - [ DEBUG ]  http-outgoing-0 << "499[\r][\n]"
+  2017-05-16 14:53:13  [ main:589 ] - [ DEBUG ]  http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d]Vok[0xdb]F[0x18]_[0xe8]w[0xb8]j$i[0x9][0xb6]b[0x9b][0xd0],[0x96][0x14][0xbc]4[0x83]PX[0xcb][0x9a][0xc0][0xf2][0xca][0x9c][0xa4][0x93]u[0x89][0xa4]Su'+[0xee][0xab][0x5][0xd6][0xb1][0xb1]u[0xd9][0xe8][0xfe][0xb0]u[0xb0]1[0xb6]f/[0x6][0xcd]X`%][0xda]/c[0xa5][0xc9][0xab]}[0x85]='[0x9d]c;q[0xe8][0x8c]A[0xba][0xe7][0x9e][0xfb]=[0xbf][0xe7][0xef][0xc9][0xb8]v[0xeb][0xce][0xf2][0xda][0xc6][0xdd][0x15][0xe4][0x8b]0[0xb0][0xae]^1[0xae]U*[0xf7][0xd6]Zk[0xeb][0xf7][0xd0][0x9d][0xdb][0x95][0x8a]e[0x14]rd[0xf8][0x4][0xbb][0x96][0x11][0x12][0x81]AS[0xc4][0x15]r?[0xa5]][0xd3]a[0x91] [0x91][0xa8][0x88]^L[0x90]Z[0x98][0x82]l[0xb]][0x1e]k:>N8[0x11]f*[0xbc][0xca][0xc2][0xc5][0xd3][0x1f]T[0xd6][[0x95]e[0x16][0xc6]XP;[0x18][0x2][0xac][0xae][0x98]+n[0x87][0xa8][0x3][0x3]X[0x1c]d[0xb8][0xc7]Q[0x84]Cb&[0xc4]#IB[0x12][0xcb][0x8]h[0xb4][0x85][0x12][0x12][0x98]\[0xf4][0x2][0xc2]}B[0x4][0x92]lJ[0x16][0xe][0xe7][0xc8][0x7]eSr[0xe6][0x8b][0xba][0xce]y[0xad]j[0xbb]\[0x80]E[0xa7][0xea][0xb0]P[0x9f]'[0xef][0xd5][0xec][0xcd][0xfb][0xb][0xad][0xd6][0xfa]FX[0xd0]a[0x1b][0x8d][0xdb]z[0xa2]gY[0xa6];[0xd8][0xf1][0x89]n[0xbb],y[0xa0][0xdb][0x98][0xba]i5[0xa4]Q[0x15] -CP[0x11][0x10][0xeb][0xf5][0xf7]/[0xf3][0xc3][0xa7][0xfd][0xe7][0x1f][0xf6][0x9f][0xf6][0xef]?[0x9f][0xf7][0x8f]~[0xce][0xf7][0xff]|[0xfd][0xd3]o[0xa7];[0x8f][\r][0xbd]T1[0xf4]"p[0xc8][0xb0][0x99][0xdb]C[0x92][0xac][0xf9][0xd6][0x1c][0xfc][0x1c][0xc7]B[0x86]K[0xbb][0x88][0xba]f[0x96][0xe0]8[0x6]_[0xce][0x4][0xea][0x88][0xdc]v[0x2][0xcc][0xb9])[0x5][0xed]q[0xb5]r[0x83][0xb7]=[0x96][0x84][0xea][0xe4][0xa8][0xe8][0x9c]6X[0x9]:[0xa0]F[0xc3][0xe][0xf2][0xa9]K<[0xe6][0xa4][0xdc][0x14]IJ[0x10]O[0x1c]S[0x97][0xfe]VK[0x1f]eP@[\r][0xfc]n[0x7][0xac][0xc3]j[0xd5]8[0xea][0xa0][0x8c][0xba][0xc2]7[0xeb]7[0xe7][0x90]Oh[0xc7][0x17]f[0xad][0xfe]6[0xc0][0xe9]@[0x11][0x1e][0x92][0x83]t[0xa4]x[0x16][0xf9][0xf1][0x10]v[0x4]e[0xd1][0x5]d[0xae]<[0xf2]$i[0x1a][0xc5][0xa9][0xca][0x16][0x90]rIT&[0xb7][0x88]x[0x1b]x[0x10][0xd4][0xc5]AJ[0xcc][0xda][0xe5][0xba]t[0xa0]S[0x96][0xd8][0xa5][0x98][0x9e][0x82]Z[0xb8][0x1c]*[0xe1][0xdd][0xb6][0x1d][0xbf][0xd9][0xa4][0xd4][0xa3][0xee][0xf6][0x9b][0x15]E[0xa4]t[0x8a][0xc0]Z[0x6][0x8f]q[0xa4][0xdc][0xd7][0xec][0xe][0xe2]m[0x1a][0xb][0xc8][0x93]f[0xa9]@@[0x4][0xb7][0xb2]2[0x4][0x99][0xab][0x14][0xb][0xa5][0x12][0x6][0x85]x; QG&b~[0x1e][0xe1]T0[0x88]Q[0x1c][0x10]AL[0xe6]A[0xc4]AP[0xe6][0xf5][0xec][0xcd]2tit[0x82]i[D[0xa3][0xa6][0x8b][0x8e][0xe1][0xa9][0x1d]R![0x13][0xc9]S[0xc5]|[0xb4][0xc2][0xc7][0xa8][0xc3]ymhq`[0x7]*B[0xd5][0xa3][0xaa][0xc][0xf5]P[0x85][0x9e][0xca]D[0xc2][0xfc][0x18]4$[0xf4]cD2>,[0xbc][0xd2]y[0xb1][0xd9][0x16][0x89][0xdc]P[0x16][0xc3][0x8]w[0xad][0xe3]o[0xf7]O[0xbf]{a[0xe8]x[0x1c]B[0xf6][0xb4][0xac]][0x1f][0xb3]Z[0xbd]!;z[0x4][0xa3][0x14][0x8e][0xa2][0x94][0x92][0xb]([0x0][0x12][0xe2]x"[0xf][0x90][0x8f][0x2][0xe4]?[0xee][0xe7]O^N[0x2][0xe8]N<[0xde][0x85]fc[0xa3][0x0]'{[0x1f][0x9f][0xfe][0xf2][0xd5]$[0x0]A[0x89][0x8d]'[0x82][0x14];c [0x7][0x7][0xf9][0x97]{%H[0xc4][0xb8][0x93]@%[0x8d][0xc7]E[0x85]e[0xd8][0xd2][0xe5][0x18][0x83][0x8e][0x86][0x11][0xd6][0xa1][0xde]R[0xf1]6[0x8d][0xc3][0xb8])[0xe2][0xc0][0xc][0xa3][0xe2]5-[0xe6][0xe4]T[0xa3]5U[0x17][0xfe]cCa[0xaa][0xee]M5[0xbc]aoN5[0xdc][0xda]Y[0xac][0xb]4[0xc5]0[0xb0]a0[0xbe][0xc8][0x8f][0xbe])[0xf9][0xe9]#[0x4][0x15]S[0x17][0xa6]O[0x8][0xd7]F5K[0xa8] [0xd7]g[0x6]5[0xa1][0xc9])[0xfd]?[0x99]+[0xd6][0xa9]93[0x8b]H[0xe4]0[0x97][0xac][0xbf][0xbf][0xba][0xc][0xfd][0xc0]"@[0xbe][0x9e][0xd1][0xc8]eY5`[0xe]Lz[0x16]Ue[0xcd][0xcd][0xa2][0xb]bNp[0xe2][0xf8][0xc8]4M[0xa4]ih[0x9]iK[0x1a]ZD[0xda][0xb4]vc[0x16]iC_[0xcd][0x9a][0x14][0xcc]h[0xa5][0xbf][0x1a][0x14]h[0xe1][0xb0][0xa6]<[0xd6][0x2][[0x1b][0xf1]y[0xe6]F[0xf3][0xea][0x15]t[0xee][0x7][0x9d]x.M[0xe7][0x87]n[0xc8][0x12][0xa2][0x9f]E[0xd4]N([0x85][0x9b]OY[0x80][0x15]*.8Ss)[0x8f][0x3][0xdc][D68[0xb7][0xd5][0xd4][0xac][0xe3]'[0x7][0xf9][0xaf]?[0xf4][0xf][0xf7][0xf2][0xc7];*[0xe4][0xe5]X[0x9e][0xd8][0x83][0x9e]Xf[0x11][0xd4][0x8a]j[0xc9]b[0x99][0xc1]:[0x96]}[0x1f][0xf8][0x17][0xaa][0xc8][0x87]1<,J+[0xf8]W[0xff][0xf0][0x8b]r,L*b[0x9a][0x8c]([0xb7]l[0x6][0xf3][0xfd][0x1d]yu*b[0xf1][0xc0][0x92][0x13][[0xd3][0xe][0x8b]{[0xcd][0xfa]\[0xed][0xe6]td[0xf3][0xb8]Y[0xe8][0x95][0xaf][0x83][0x82][0x98]X[0xf]n*z[0xba][0xd5]?z[0xf5][0xfa][0xeb][0xdf]K"[0xf9][0xa7][0x8f][0xf2]W[0xf]O[0x9e][0x15][0xe3][0xa1]D8?g6)[0x8e]zt[0xc8]MW[0x81]u[0xe2][0x8a]G[0x88]kcg[0xcb]:[0xfe]h[0xf7]do'[0xdf]}t[0xfa][0xf4][0x13][0xc9][0xb7]D[0xea][0x1f][0xfe][0xb1][0xba]|[0xf7][0xe4][0xd9][0xce]\[0x3][0xa8]6[0xf2][0xdd][0xbf][0x7][0x16][0xe4]ez[0xd9][0xed][0xd9][0xe1][0xb2][0xcb][0xc0][][0xba]<[0x9e][0x89][0xc1]J~[0x12][0xc8]M[0xf5][0xe5][0xf5][0x1f]0[0xc][0x81][0x9a][0x8b][0x9][0x0][0x0][\r][\n]"
+  2017-05-16 14:53:13  [ main:593 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 200 OK
+  2017-05-16 14:53:13  [ main:593 ] - [ DEBUG ]  http-outgoing-0 << Server: bfe/1.0.8.18
+  2017-05-16 14:53:13  [ main:594 ] - [ DEBUG ]  http-outgoing-0 << Date: Tue, 16 May 2017 06:53:14 GMT
+  2017-05-16 14:53:13  [ main:594 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: text/html
+  2017-05-16 14:53:13  [ main:594 ] - [ DEBUG ]  http-outgoing-0 << Transfer-Encoding: chunked
+  2017-05-16 14:53:13  [ main:594 ] - [ DEBUG ]  http-outgoing-0 << Connection: keep-alive
+  2017-05-16 14:53:13  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Last-Modified: Mon, 23 Jan 2017 13:23:47 GMT
+  2017-05-16 14:53:13  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  2017-05-16 14:53:13  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Pragma: no-cache
+  2017-05-16 14:53:13  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/
+  2017-05-16 14:53:13  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Content-Encoding: gzip
+  2017-05-16 14:53:13  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: __bsi=16378640784662298401_00_152_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:53:19 GMT; domain=www.baidu.com; path=/
+  2017-05-16 14:53:13  [ main:600 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+  2017-05-16 14:53:13  [ main:604 ] - [ DEBUG ]  Cookie accepted [BDORZ="27315", version:0, domain:baidu.com, path:/, expiry:null]
+  2017-05-16 14:53:13  [ main:612 ] - [ DEBUG ]  Cookie accepted [__bsi="16378640784662298401_00_152_N_N_2_0303_C02F_N_N_N_0", version:0, domain:www.baidu.com, path:/, expiry:Tue May 16 14:53:19 CST 2017]
+  2017-05-16 14:53:30  [ main:0 ] - [ DEBUG ]  CookieSpec selected: default
+  2017-05-16 14:53:30  [ main:12 ] - [ DEBUG ]  Auth cache not set in the context
+  2017-05-16 14:53:30  [ main:13 ] - [ DEBUG ]  Connection request: [route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+  2017-05-16 14:53:30  [ main:34 ] - [ DEBUG ]  Connection leased: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 14:53:30  [ main:36 ] - [ DEBUG ]  Opening connection {s}->https://www.baidu.com:443
+  2017-05-16 14:53:30  [ main:46 ] - [ DEBUG ]  Connecting to www.baidu.com/61.135.169.121:443
+  2017-05-16 14:53:30  [ main:46 ] - [ DEBUG ]  Connecting socket to www.baidu.com/61.135.169.121:443 with timeout 0
+  2017-05-16 14:53:30  [ main:315 ] - [ DEBUG ]  Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+  2017-05-16 14:53:30  [ main:315 ] - [ DEBUG ]  Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+  2017-05-16 14:53:30  [ main:316 ] - [ DEBUG ]  Starting handshake
+  2017-05-16 14:53:30  [ main:387 ] - [ DEBUG ]  Secure session established
+  2017-05-16 14:53:30  [ main:388 ] - [ DEBUG ]   negotiated protocol: TLSv1.2
+  2017-05-16 14:53:30  [ main:388 ] - [ DEBUG ]   negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  2017-05-16 14:53:30  [ main:389 ] - [ DEBUG ]   peer principal: CN=baidu.com, OU=service operation department., O="BeiJing Baidu Netcom Science Technology Co., Ltd", L=beijing, ST=beijing, C=CN
+  2017-05-16 14:53:30  [ main:389 ] - [ DEBUG ]   peer alternative names: [*.baidu.com, *.baifubao.com, *.bdstatic.com, *.hao123.com, *.nuomi.com, *.bce.baidu.com, *.eyun.baidu.com, *.map.baidu.com, baidu.com, baifubao.com, www.baidu.cn, www.baidu.com.cn, click.hm.baidu.com, log.hm.baidu.com, cm.pos.baidu.com, wn.pos.baidu.com, update.pan.baidu.com, mct.y.nuomi.com]
+  2017-05-16 14:53:30  [ main:389 ] - [ DEBUG ]   issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  2017-05-16 14:53:30  [ main:392 ] - [ DEBUG ]  Connection established 10.1.16.24:7164<->61.135.169.121:443
+  2017-05-16 14:53:30  [ main:393 ] - [ DEBUG ]  Executing request GET / HTTP/1.1
+  2017-05-16 14:53:30  [ main:393 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+  2017-05-16 14:53:30  [ main:393 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+  2017-05-16 14:53:30  [ main:394 ] - [ DEBUG ]  http-outgoing-0 >> GET / HTTP/1.1
+  2017-05-16 14:53:30  [ main:395 ] - [ DEBUG ]  http-outgoing-0 >> Host: www.baidu.com
+  2017-05-16 14:53:30  [ main:395 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+  2017-05-16 14:53:30  [ main:395 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+  2017-05-16 14:53:30  [ main:396 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+  2017-05-16 14:53:30  [ main:396 ] - [ DEBUG ]  http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+  2017-05-16 14:53:30  [ main:397 ] - [ DEBUG ]  http-outgoing-0 >> "Host: www.baidu.com[\r][\n]"
+  2017-05-16 14:53:30  [ main:397 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+  2017-05-16 14:53:30  [ main:397 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+  2017-05-16 14:53:30  [ main:398 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+  2017-05-16 14:53:30  [ main:398 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+  2017-05-16 14:53:30  [ main:410 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+  2017-05-16 14:53:30  [ main:410 ] - [ DEBUG ]  http-outgoing-0 << "Server: bfe/1.0.8.18[\r][\n]"
+  2017-05-16 14:53:30  [ main:410 ] - [ DEBUG ]  http-outgoing-0 << "Date: Tue, 16 May 2017 06:53:32 GMT[\r][\n]"
+  2017-05-16 14:53:30  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+  2017-05-16 14:53:30  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+  2017-05-16 14:53:30  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+  2017-05-16 14:53:30  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Last-Modified: Mon, 23 Jan 2017 13:23:44 GMT[\r][\n]"
+  2017-05-16 14:53:30  [ main:411 ] - [ DEBUG ]  http-outgoing-0 << "Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform[\r][\n]"
+  2017-05-16 14:53:30  [ main:412 ] - [ DEBUG ]  http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+  2017-05-16 14:53:30  [ main:412 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:53:30  [ main:412 ] - [ DEBUG ]  http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+  2017-05-16 14:53:30  [ main:413 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: __bsi=16225179287996711057_00_54_N_N_3_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:53:37 GMT; domain=www.baidu.com; path=/[\r][\n]"
+  2017-05-16 14:53:30  [ main:413 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 14:53:30  [ main:413 ] - [ DEBUG ]  http-outgoing-0 << "499[\r][\n]"
+  2017-05-16 14:53:30  [ main:414 ] - [ DEBUG ]  http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d]Vok[0xdb]F[0x18]_[0xe8]w[0xb8]j$i[0x9][0xb6]b[0x9b][0xd0],[0x96][0x14][0xbc]4[0x83]PX[0xcb][0x9a][0xc0][0xf2][0xca][0x9c][0xa4][0x93]u[0x89][0xa4]Su'+[0xee][0xab][0x5][0xd6][0xb1][0xb1]u[0xd9][0xe8][0xfe][0xb0]u[0xb0]1[0xb6]f/[0x6][0xcd]X`%][0xda]/c[0xa5][0xc9][0xab]}[0x85]='[0x9d]c;q[0xe8][0x8c]A[0xba][0xe7][0x9e][0xfb]=[0xbf][0xe7][0xef][0xc9][0xb8]v[0xeb][0xce][0xf2][0xda][0xc6][0xdd][0x15][0xe4][0x8b]0[0xb0][0xae]^1[0xae]U*[0xf7][0xd6]Zk[0xeb][0xf7][0xd0][0x9d][0xdb][0x95][0x8a]e[0x14]rd[0xf8][0x4][0xbb][0x96][0x11][0x12][0x81]AS[0xc4][0x15]r?[0xa5]][0xd3]a[0x91] [0x91][0xa8][0x88]^L[0x90]Z[0x98][0x82]l[0xb]][0x1e]k:>N8[0x11]f*[0xbc][0xca][0xc2][0xc5][0xd3][0x1f]T[0xd6][[0x95]e[0x16][0xc6]XP;[0x18][0x2][0xac][0xae][0x98]+n[0x87][0xa8][0x3][0x3]X[0x1c]d[0xb8][0xc7]Q[0x84]Cb&[0xc4]#IB[0x12][0xcb][0x8]h[0xb4][0x85][0x12][0x12][0x98]\[0xf4][0x2][0xc2]}B[0x4][0x92]lJ[0x16][0xe][0xe7][0xc8][0x7]eSr[0xe6][0x8b][0xba][0xce]y[0xad]j[0xbb]\[0x80]E[0xa7][0xea][0xb0]P[0x9f]'[0xef][0xd5][0xec][0xcd][0xfb][0xb][0xad][0xd6][0xfa]FX[0xd0]a[0x1b][0x8d][0xdb]z[0xa2]gY[0xa6];[0xd8][0xf1][0x89]n[0xbb],y[0xa0][0xdb][0x98][0xba]i5[0xa4]Q[0x15] -CP[0x11][0x10][0xeb][0xf5][0xf7]/[0xf3][0xc3][0xa7][0xfd][0xe7][0x1f][0xf6][0x9f][0xf6][0xef]?[0x9f][0xf7][0x8f]~[0xce][0xf7][0xff]|[0xfd][0xd3]o[0xa7];[0x8f][\r][0xbd]T1[0xf4]"p[0xc8][0xb0][0x99][0xdb]C[0x92][0xac][0xf9][0xd6][0x1c][0xfc][0x1c][0xc7]B[0x86]K[0xbb][0x88][0xba]f[0x96][0xe0]8[0x6]_[0xce][0x4][0xea][0x88][0xdc]v[0x2][0xcc][0xb9])[0x5][0xed]q[0xb5]r[0x83][0xb7]=[0x96][0x84][0xea][0xe4][0xa8][0xe8][0x9c]6X[0x9]:[0xa0]F[0xc3][0xe][0xf2][0xa9]K<[0xe6][0xa4][0xdc][0x14]IJ[0x10]O[0x1c]S[0x97][0xfe]VK[0x1f]eP@[\r][0xfc]n[0x7][0xac][0xc3]j[0xd5]8[0xea][0xa0][0x8c][0xba][0xc2]7[0xeb]7[0xe7][0x90]Oh[0xc7][0x17]f[0xad][0xfe]6[0xc0][0xe9]@[0x11][0x1e][0x92][0x83]t[0xa4]x[0x16][0xf9][0xf1][0x10]v[0x4]e[0xd1][0x5]d[0xae]<[0xf2]$i[0x1a][0xc5][0xa9][0xca][0x16][0x90]rIT&[0xb7][0x88]x[0x1b]x[0x10][0xd4][0xc5]AJ[0xcc][0xda][0xe5][0xba]t[0xa0]S[0x96][0xd8][0xa5][0x98][0x9e][0x82]Z[0xb8][0x1c]*[0xe1][0xdd][0xb6][0x1d][0xbf][0xd9][0xa4][0xd4][0xa3][0xee][0xf6][0x9b][0x15]E[0xa4]t[0x8a][0xc0]Z[0x6][0x8f]q[0xa4][0xdc][0xd7][0xec][0xe][0xe2]m[0x1a][0xb][0xc8][0x93]f[0xa9]@@[0x4][0xb7][0xb2]2[0x4][0x99][0xab][0x14][0xb][0xa5][0x12][0x6][0x85]x; QG&b~[0x1e][0xe1]T0[0x88]Q[0x1c][0x10]AL[0xe6]A[0xc4]AP[0xe6][0xf5][0xec][0xcd]2tit[0x82]i[D[0xa3][0xa6][0x8b][0x8e][0xe1][0xa9][0x1d]R![0x13][0xc9]S[0xc5]|[0xb4][0xc2][0xc7][0xa8][0xc3]ymhq`[0x7]*B[0xd5][0xa3][0xaa][0xc][0xf5]P[0x85][0x9e][0xca]D[0xc2][0xfc][0x18]4$[0xf4]cD2>,[0xbc][0xd2]y[0xb1][0xd9][0x16][0x89][0xdc]P[0x16][0xc3][0x8]w[0xad][0xe3]o[0xf7]O[0xbf]{a[0xe8]x[0x1c]B[0xf6][0xb4][0xac]][0x1f][0xb3]Z[0xbd]!;z[0x4][0xa3][0x14][0x8e][0xa2][0x94][0x92][0xb]([0x0][0x12][0xe2]x"[0xf][0x90][0x8f][0x2][0xe4]?[0xee][0xe7]O^N[0x2][0xe8]N<[0xde][0x85]fc[0xa3][0x0]'{[0x1f][0x9f][0xfe][0xf2][0xd5]$[0x0]A[0x89][0x8d]'[0x82][0x14];c [0x7][0x7][0xf9][0x97]{%H[0xc4][0xb8][0x93]@%[0x8d][0xc7]E[0x85]e[0xd8][0xd2][0xe5][0x18][0x83][0x8e][0x86][0x11][0xd6][0xa1][0xde]R[0xf1]6[0x8d][0xc3][0xb8])[0xe2][0xc0][0xc][0xa3][0xe2]5-[0xe6][0xe4]T[0xa3]5U[0x17][0xfe]cCa[0xaa][0xee]M5[0xbc]aoN5[0xdc][0xda]Y[0xac][0xb]4[0xc5]0[0xb0]a0[0xbe][0xc8][0x8f][0xbe])[0xf9][0xe9]#[0x4][0x15]S[0x17][0xa6]O[0x8][0xd7]F5K[0xa8] [0xd7]g[0x6]5[0xa1][0xc9])[0xfd]?[0x99]+[0xd6][0xa9]93[0x8b]H[0xe4]0[0x97][0xac][0xbf][0xbf][0xba][0xc][0xfd][0xc0]"@[0xbe][0x9e][0xd1][0xc8]eY5`[0xe]Lz[0x16]Ue[0xcd][0xcd][0xa2][0xb]bNp[0xe2][0xf8][0xc8]4M[0xa4]ih[0x9]iK[0x1a]ZD[0xda][0xb4]vc[0x16]iC_[0xcd][0x9a][0x14][0xcc]h[0xa5][0xbf][0x1a][0x14]h[0xe1][0xb0][0xa6]<[0xd6][0x2][[0x1b][0xf1]y[0xe6]F[0xf3][0xea][0x15]t[0xee][0x7][0x9d]x.M[0xe7][0x87]n[0xc8][0x12][0xa2][0x9f]E[0xd4]N([0x85][0x9b]OY[0x80][0x15]*.8Ss)[0x8f][0x3][0xdc][D68[0xb7][0xd5][0xd4][0xac][0xe3]'[0x7][0xf9][0xaf]?[0xf4][0xf][0xf7][0xf2][0xc7];*[0xe4][0xe5]X[0x9e][0xd8][0x83][0x9e]Xf[0x11][0xd4][0x8a]j[0xc9]b[0x99][0xc1]:[0x96]}[0x1f][0xf8][0x17][0xaa][0xc8][0x87]1<,J+[0xf8]W[0xff][0xf0][0x8b]r,L*b[0x9a][0x8c]([0xb7]l[0x6][0xf3][0xfd][0x1d]yu*b[0xf1][0xc0][0x92][0x13][[0xd3][0xe][0x8b]{[0xcd][0xfa]\[0xed][0xe6]td[0xf3][0xb8]Y[0xe8][0x95][0xaf][0x83][0x82][0x98]X[0xf]n*z[0xba][0xd5]?z[0xf5][0xfa][0xeb][0xdf]K"[0xf9][0xa7][0x8f][0xf2]W[0xf]O[0x9e][0x15][0xe3][0xa1]D8?g6)[0x8e]zt[0xc8]MW[0x81]u[0xe2][0x8a]G[0x88]kcg[0xcb]:[0xfe]h[0xf7]do'[0xdf]}t[0xfa][0xf4][0x13][0xc9][0xb7]D[0xea][0x1f][0xfe][0xb1][0xba]|[0xf7][0xe4][0xd9][0xce]\[0x3][0xa8]6[0xf2][0xdd][0xbf][0x7][0x16][0xe4]ez[0xd9][0xed][0xd9][0xe1][0xb2][0xcb][0xc0][][0xba]<[0x9e][0x89][0xc1]J~[0x12][0xc8]M[0xf5][0xe5][0xf5][0x1f]0[0xc][0x81][0x9a][0x8b][0x9][0x0][0x0][\r][\n]"
+  2017-05-16 14:53:30  [ main:419 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 200 OK
+  2017-05-16 14:53:30  [ main:420 ] - [ DEBUG ]  http-outgoing-0 << Server: bfe/1.0.8.18
+  2017-05-16 14:53:30  [ main:420 ] - [ DEBUG ]  http-outgoing-0 << Date: Tue, 16 May 2017 06:53:32 GMT
+  2017-05-16 14:53:30  [ main:420 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: text/html
+  2017-05-16 14:53:30  [ main:420 ] - [ DEBUG ]  http-outgoing-0 << Transfer-Encoding: chunked
+  2017-05-16 14:53:30  [ main:421 ] - [ DEBUG ]  http-outgoing-0 << Connection: keep-alive
+  2017-05-16 14:53:30  [ main:421 ] - [ DEBUG ]  http-outgoing-0 << Last-Modified: Mon, 23 Jan 2017 13:23:44 GMT
+  2017-05-16 14:53:30  [ main:421 ] - [ DEBUG ]  http-outgoing-0 << Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  2017-05-16 14:53:30  [ main:422 ] - [ DEBUG ]  http-outgoing-0 << Pragma: no-cache
+  2017-05-16 14:53:30  [ main:422 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/
+  2017-05-16 14:53:30  [ main:423 ] - [ DEBUG ]  http-outgoing-0 << Content-Encoding: gzip
+  2017-05-16 14:53:30  [ main:423 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: __bsi=16225179287996711057_00_54_N_N_3_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 06:53:37 GMT; domain=www.baidu.com; path=/
+  2017-05-16 14:53:30  [ main:429 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+  2017-05-16 14:53:30  [ main:434 ] - [ DEBUG ]  Cookie accepted [BDORZ="27315", version:0, domain:baidu.com, path:/, expiry:null]
+  2017-05-16 14:53:30  [ main:440 ] - [ DEBUG ]  Cookie accepted [__bsi="16225179287996711057_00_54_N_N_3_0303_C02F_N_N_N_0", version:0, domain:www.baidu.com, path:/, expiry:Tue May 16 14:53:37 CST 2017]
+  2017-05-16 15:00:39  [ main:0 ] - [ DEBUG ]  CookieSpec selected: default
+  2017-05-16 15:00:39  [ main:10 ] - [ DEBUG ]  Auth cache not set in the context
+  2017-05-16 15:00:39  [ main:11 ] - [ DEBUG ]  Connection request: [route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+  2017-05-16 15:00:39  [ main:25 ] - [ DEBUG ]  Connection leased: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 15:00:39  [ main:27 ] - [ DEBUG ]  Opening connection {s}->https://www.baidu.com:443
+  2017-05-16 15:00:39  [ main:59 ] - [ DEBUG ]  Connecting to www.baidu.com/61.135.169.125:443
+  2017-05-16 15:00:39  [ main:60 ] - [ DEBUG ]  Connecting socket to www.baidu.com/61.135.169.125:443 with timeout 0
+  2017-05-16 15:00:39  [ main:372 ] - [ DEBUG ]  Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+  2017-05-16 15:00:39  [ main:373 ] - [ DEBUG ]  Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+  2017-05-16 15:00:39  [ main:373 ] - [ DEBUG ]  Starting handshake
+  2017-05-16 15:00:39  [ main:435 ] - [ DEBUG ]  Secure session established
+  2017-05-16 15:00:39  [ main:436 ] - [ DEBUG ]   negotiated protocol: TLSv1.2
+  2017-05-16 15:00:39  [ main:436 ] - [ DEBUG ]   negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  2017-05-16 15:00:39  [ main:436 ] - [ DEBUG ]   peer principal: CN=baidu.com, OU=service operation department., O="BeiJing Baidu Netcom Science Technology Co., Ltd", L=beijing, ST=beijing, C=CN
+  2017-05-16 15:00:39  [ main:437 ] - [ DEBUG ]   peer alternative names: [*.baidu.com, *.baifubao.com, *.bdstatic.com, *.hao123.com, *.nuomi.com, *.bce.baidu.com, *.eyun.baidu.com, *.map.baidu.com, baidu.com, baifubao.com, www.baidu.cn, www.baidu.com.cn, click.hm.baidu.com, log.hm.baidu.com, cm.pos.baidu.com, wn.pos.baidu.com, update.pan.baidu.com, mct.y.nuomi.com]
+  2017-05-16 15:00:39  [ main:437 ] - [ DEBUG ]   issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  2017-05-16 15:00:39  [ main:440 ] - [ DEBUG ]  Connection established 10.1.16.24:7293<->61.135.169.125:443
+  2017-05-16 15:00:39  [ main:441 ] - [ DEBUG ]  Executing request GET / HTTP/1.1
+  2017-05-16 15:00:39  [ main:441 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+  2017-05-16 15:00:39  [ main:441 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+  2017-05-16 15:00:39  [ main:443 ] - [ DEBUG ]  http-outgoing-0 >> GET / HTTP/1.1
+  2017-05-16 15:00:39  [ main:443 ] - [ DEBUG ]  http-outgoing-0 >> Host: www.baidu.com
+  2017-05-16 15:00:39  [ main:443 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+  2017-05-16 15:00:39  [ main:443 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+  2017-05-16 15:00:39  [ main:443 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+  2017-05-16 15:00:39  [ main:444 ] - [ DEBUG ]  http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+  2017-05-16 15:00:39  [ main:444 ] - [ DEBUG ]  http-outgoing-0 >> "Host: www.baidu.com[\r][\n]"
+  2017-05-16 15:00:39  [ main:444 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+  2017-05-16 15:00:39  [ main:444 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+  2017-05-16 15:00:39  [ main:444 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+  2017-05-16 15:00:39  [ main:445 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+  2017-05-16 15:00:39  [ main:469 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+  2017-05-16 15:00:39  [ main:470 ] - [ DEBUG ]  http-outgoing-0 << "Server: bfe/1.0.8.18[\r][\n]"
+  2017-05-16 15:00:39  [ main:470 ] - [ DEBUG ]  http-outgoing-0 << "Date: Tue, 16 May 2017 07:00:41 GMT[\r][\n]"
+  2017-05-16 15:00:39  [ main:471 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+  2017-05-16 15:00:39  [ main:471 ] - [ DEBUG ]  http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+  2017-05-16 15:00:39  [ main:471 ] - [ DEBUG ]  http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+  2017-05-16 15:00:39  [ main:471 ] - [ DEBUG ]  http-outgoing-0 << "Last-Modified: Mon, 23 Jan 2017 13:23:47 GMT[\r][\n]"
+  2017-05-16 15:00:39  [ main:472 ] - [ DEBUG ]  http-outgoing-0 << "Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform[\r][\n]"
+  2017-05-16 15:00:39  [ main:472 ] - [ DEBUG ]  http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+  2017-05-16 15:00:39  [ main:472 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/[\r][\n]"
+  2017-05-16 15:00:39  [ main:472 ] - [ DEBUG ]  http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+  2017-05-16 15:00:39  [ main:473 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: __bsi=12767358952774287047_00_51_N_N_3_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 07:00:46 GMT; domain=www.baidu.com; path=/[\r][\n]"
+  2017-05-16 15:00:39  [ main:473 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 15:00:39  [ main:476 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 200 OK
+  2017-05-16 15:00:39  [ main:477 ] - [ DEBUG ]  http-outgoing-0 << Server: bfe/1.0.8.18
+  2017-05-16 15:00:39  [ main:480 ] - [ DEBUG ]  http-outgoing-0 << Date: Tue, 16 May 2017 07:00:41 GMT
+  2017-05-16 15:00:39  [ main:480 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: text/html
+  2017-05-16 15:00:39  [ main:480 ] - [ DEBUG ]  http-outgoing-0 << Transfer-Encoding: chunked
+  2017-05-16 15:00:39  [ main:480 ] - [ DEBUG ]  http-outgoing-0 << Connection: keep-alive
+  2017-05-16 15:00:39  [ main:480 ] - [ DEBUG ]  http-outgoing-0 << Last-Modified: Mon, 23 Jan 2017 13:23:47 GMT
+  2017-05-16 15:00:39  [ main:481 ] - [ DEBUG ]  http-outgoing-0 << Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  2017-05-16 15:00:39  [ main:481 ] - [ DEBUG ]  http-outgoing-0 << Pragma: no-cache
+  2017-05-16 15:00:39  [ main:481 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/
+  2017-05-16 15:00:39  [ main:481 ] - [ DEBUG ]  http-outgoing-0 << Content-Encoding: gzip
+  2017-05-16 15:00:39  [ main:481 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: __bsi=12767358952774287047_00_51_N_N_3_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 07:00:46 GMT; domain=www.baidu.com; path=/
+  2017-05-16 15:00:39  [ main:490 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+  2017-05-16 15:00:39  [ main:494 ] - [ DEBUG ]  Cookie accepted [BDORZ="27315", version:0, domain:baidu.com, path:/, expiry:null]
+  2017-05-16 15:00:39  [ main:500 ] - [ DEBUG ]  Cookie accepted [__bsi="12767358952774287047_00_51_N_N_3_0303_C02F_N_N_N_0", version:0, domain:www.baidu.com, path:/, expiry:Tue May 16 15:00:46 CST 2017]
+  2017-05-16 15:00:39  [ main:562 ] - [ DEBUG ]  http-outgoing-0 << "499[\r][\n]"
+  2017-05-16 15:00:39  [ main:564 ] - [ DEBUG ]  http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d]Vok[0xdb]F[0x18]_[0xe8]w[0xb8]j$i[0x9][0xb6]b[0x9b][0xd0],[0x96][0x14][0xbc]4[0x83]PX[0xcb][0x9a][0xc0][0xf2][0xca][0x9c][0xa4][0x93]u[0x89][0xa4]Su'+[0xee][0xab][0x5][0xd6][0xb1][0xb1]u[0xd9][0xe8][0xfe][0xb0]u[0xb0]1[0xb6]f/[0x6][0xcd]X`%][0xda]/c[0xa5][0xc9][0xab]}[0x85]='[0x9d]c;q[0xe8][0x8c]A[0xba][0xe7][0x9e][0xfb]=[0xbf][0xe7][0xef][0xc9][0xb8]v[0xeb][0xce][0xf2][0xda][0xc6][0xdd][0x15][0xe4][0x8b]0[0xb0][0xae]^1[0xae]U*[0xf7][0xd6]Zk[0xeb][0xf7][0xd0][0x9d][0xdb][0x95][0x8a]e[0x14]rd[0xf8][0x4][0xbb][0x96][0x11][0x12][0x81]AS[0xc4][0x15]r?[0xa5]][0xd3]a[0x91] [0x91][0xa8][0x88]^L[0x90]Z[0x98][0x82]l[0xb]][0x1e]k:>N8[0x11]f*[0xbc][0xca][0xc2][0xc5][0xd3][0x1f]T[0xd6][[0x95]e[0x16][0xc6]XP;[0x18][0x2][0xac][0xae][0x98]+n[0x87][0xa8][0x3][0x3]X[0x1c]d[0xb8][0xc7]Q[0x84]Cb&[0xc4]#IB[0x12][0xcb][0x8]h[0xb4][0x85][0x12][0x12][0x98]\[0xf4][0x2][0xc2]}B[0x4][0x92]lJ[0x16][0xe][0xe7][0xc8][0x7]eSr[0xe6][0x8b][0xba][0xce]y[0xad]j[0xbb]\[0x80]E[0xa7][0xea][0xb0]P[0x9f]'[0xef][0xd5][0xec][0xcd][0xfb][0xb][0xad][0xd6][0xfa]FX[0xd0]a[0x1b][0x8d][0xdb]z[0xa2]gY[0xa6];[0xd8][0xf1][0x89]n[0xbb],y[0xa0][0xdb][0x98][0xba]i5[0xa4]Q[0x15] -CP[0x11][0x10][0xeb][0xf5][0xf7]/[0xf3][0xc3][0xa7][0xfd][0xe7][0x1f][0xf6][0x9f][0xf6][0xef]?[0x9f][0xf7][0x8f]~[0xce][0xf7][0xff]|[0xfd][0xd3]o[0xa7];[0x8f][\r][0xbd]T1[0xf4]"p[0xc8][0xb0][0x99][0xdb]C[0x92][0xac][0xf9][0xd6][0x1c][0xfc][0x1c][0xc7]B[0x86]K[0xbb][0x88][0xba]f[0x96][0xe0]8[0x6]_[0xce][0x4][0xea][0x88][0xdc]v[0x2][0xcc][0xb9])[0x5][0xed]q[0xb5]r[0x83][0xb7]=[0x96][0x84][0xea][0xe4][0xa8][0xe8][0x9c]6X[0x9]:[0xa0]F[0xc3][0xe][0xf2][0xa9]K<[0xe6][0xa4][0xdc][0x14]IJ[0x10]O[0x1c]S[0x97][0xfe]VK[0x1f]eP@[\r][0xfc]n[0x7][0xac][0xc3]j[0xd5]8[0xea][0xa0][0x8c][0xba][0xc2]7[0xeb]7[0xe7][0x90]Oh[0xc7][0x17]f[0xad][0xfe]6[0xc0][0xe9]@[0x11][0x1e][0x92][0x83]t[0xa4]x[0x16][0xf9][0xf1][0x10]v[0x4]e[0xd1][0x5]d[0xae]<[0xf2]$i[0x1a][0xc5][0xa9][0xca][0x16][0x90]rIT&[0xb7][0x88]x[0x1b]x[0x10][0xd4][0xc5]AJ[0xcc][0xda][0xe5][0xba]t[0xa0]S[0x96][0xd8][0xa5][0x98][0x9e][0x82]Z[0xb8][0x1c]*[0xe1][0xdd][0xb6][0x1d][0xbf][0xd9][0xa4][0xd4][0xa3][0xee][0xf6][0x9b][0x15]E[0xa4]t[0x8a][0xc0]Z[0x6][0x8f]q[0xa4][0xdc][0xd7][0xec][0xe][0xe2]m[0x1a][0xb][0xc8][0x93]f[0xa9]@@[0x4][0xb7][0xb2]2[0x4][0x99][0xab][0x14][0xb][0xa5][0x12][0x6][0x85]x; QG&b~[0x1e][0xe1]T0[0x88]Q[0x1c][0x10]AL[0xe6]A[0xc4]AP[0xe6][0xf5][0xec][0xcd]2tit[0x82]i[D[0xa3][0xa6][0x8b][0x8e][0xe1][0xa9][0x1d]R![0x13][0xc9]S[0xc5]|[0xb4][0xc2][0xc7][0xa8][0xc3]ymhq`[0x7]*B[0xd5][0xa3][0xaa][0xc][0xf5]P[0x85][0x9e][0xca]D[0xc2][0xfc][0x18]4$[0xf4]cD2>,[0xbc][0xd2]y[0xb1][0xd9][0x16][0x89][0xdc]P[0x16][0xc3][0x8]w[0xad][0xe3]o[0xf7]O[0xbf]{a[0xe8]x[0x1c]B[0xf6][0xb4][0xac]][0x1f][0xb3]Z[0xbd]!;z[0x4][0xa3][0x14][0x8e][0xa2][0x94][0x92][0xb]([0x0][0x12][0xe2]x"[0xf][0x90][0x8f][0x2][0xe4]?[0xee][0xe7]O^N[0x2][0xe8]N<[0xde][0x85]fc[0xa3][0x0]'{[0x1f][0x9f][0xfe][0xf2][0xd5]$[0x0]A[0x89][0x8d]'[0x82][0x14];c [0x7][0x7][0xf9][0x97]{%H[0xc4][0xb8][0x93]@%[0x8d][0xc7]E[0x85]e[0xd8][0xd2][0xe5][0x18][0x83][0x8e][0x86][0x11][0xd6][0xa1][0xde]R[0xf1]6[0x8d][0xc3][0xb8])[0xe2][0xc0][0xc][0xa3][0xe2]5-[0xe6][0xe4]T[0xa3]5U[0x17][0xfe]cCa[0xaa][0xee]M5[0xbc]aoN5[0xdc][0xda]Y[0xac][0xb]4[0xc5]0[0xb0]a0[0xbe][0xc8][0x8f][0xbe])[0xf9][0xe9]#[0x4][0x15]S[0x17][0xa6]O[0x8][0xd7]F5K[0xa8] [0xd7]g[0x6]5[0xa1][0xc9])[0xfd]?[0x99]+[0xd6][0xa9]93[0x8b]H[0xe4]0[0x97][0xac][0xbf][0xbf][0xba][0xc][0xfd][0xc0]"@[0xbe][0x9e][0xd1][0xc8]eY5`[0xe]Lz[0x16]Ue[0xcd][0xcd][0xa2][0xb]bNp[0xe2][0xf8][0xc8]4M[0xa4]ih[0x9]iK[0x1a]ZD[0xda][0xb4]vc[0x16]iC_[0xcd][0x9a][0x14][0xcc]h[0xa5][0xbf][0x1a][0x14]h[0xe1][0xb0][0xa6]<[0xd6][0x2][[0x1b][0xf1]y[0xe6]F[0xf3][0xea][0x15]t[0xee][0x7][0x9d]x.M[0xe7][0x87]n[0xc8][0x12][0xa2][0x9f]E[0xd4]N([0x85][0x9b]OY[0x80][0x15]*.8Ss)[0x8f][0x3][0xdc][D68[0xb7][0xd5][0xd4][0xac][0xe3]'[0x7][0xf9][0xaf]?[0xf4][0xf][0xf7][0xf2][0xc7];*[0xe4][0xe5]X[0x9e][0xd8][0x83][0x9e]Xf[0x11][0xd4][0x8a]j[0xc9]b[0x99][0xc1]:[0x96]}[0x1f][0xf8][0x17][0xaa][0xc8][0x87]1<,J+[0xf8]W[0xff][0xf0][0x8b]r,L*b[0x9a][0x8c]([0xb7]l[0x6][0xf3][0xfd][0x1d]yu*b[0xf1][0xc0][0x92][0x13][[0xd3][0xe][0x8b]{[0xcd][0xfa]\[0xed][0xe6]td[0xf3][0xb8]Y[0xe8][0x95][0xaf][0x83][0x82][0x98]X[0xf]n*z[0xba][0xd5]?z[0xf5][0xfa][0xeb][0xdf]K"[0xf9][0xa7][0x8f][0xf2]W[0xf]O[0x9e][0x15][0xe3][0xa1]D8?g6)[0x8e]zt[0xc8]MW[0x81]u[0xe2][0x8a]G[0x88]kcg[0xcb]:[0xfe]h[0xf7]do'[0xdf]}t[0xfa][0xf4][0x13][0xc9][0xb7]D[0xea][0x1f][0xfe][0xb1][0xba]|[0xf7][0xe4][0xd9][0xce]\[0x3][0xa8]6[0xf2][0xdd][0xbf][0x7][0x16][0xe4]ez[0xd9][0xed][0xd9][0xe1][0xb2][0xcb][0xc0][][0xba]<[0x9e][0x89][0xc1]J~[0x12][0xc8]M[0xf5][0xe5][0xf5][0x1f]0[0xc][0x81][0x9a][0x8b][0x9][0x0][0x0][\r][\n]"
+  2017-05-16 15:00:39  [ main:567 ] - [ DEBUG ]  http-outgoing-0 << "0[\r][\n]"
+  2017-05-16 15:00:39  [ main:568 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 15:00:39  [ main:569 ] - [ DEBUG ]  Connection [id: 0][route: {s}->https://www.baidu.com:443] can be kept alive indefinitely
+  2017-05-16 15:00:39  [ main:570 ] - [ DEBUG ]  Connection released: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 15:01:18  [ main:0 ] - [ DEBUG ]  CookieSpec selected: default
+  2017-05-16 15:01:18  [ main:34 ] - [ DEBUG ]  Auth cache not set in the context
+  2017-05-16 15:01:18  [ main:36 ] - [ DEBUG ]  Connection request: [route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+  2017-05-16 15:01:18  [ main:71 ] - [ DEBUG ]  Connection leased: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 15:01:18  [ main:72 ] - [ DEBUG ]  Opening connection {s}->https://www.baidu.com:443
+  2017-05-16 15:01:18  [ main:79 ] - [ DEBUG ]  Connecting to www.baidu.com/61.135.169.125:443
+  2017-05-16 15:01:18  [ main:80 ] - [ DEBUG ]  Connecting socket to www.baidu.com/61.135.169.125:443 with timeout 0
+  2017-05-16 15:01:18  [ main:381 ] - [ DEBUG ]  Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+  2017-05-16 15:01:18  [ main:382 ] - [ DEBUG ]  Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+  2017-05-16 15:01:18  [ main:382 ] - [ DEBUG ]  Starting handshake
+  2017-05-16 15:01:18  [ main:437 ] - [ DEBUG ]  Secure session established
+  2017-05-16 15:01:18  [ main:438 ] - [ DEBUG ]   negotiated protocol: TLSv1.2
+  2017-05-16 15:01:18  [ main:438 ] - [ DEBUG ]   negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  2017-05-16 15:01:18  [ main:438 ] - [ DEBUG ]   peer principal: CN=baidu.com, OU=service operation department., O="BeiJing Baidu Netcom Science Technology Co., Ltd", L=beijing, ST=beijing, C=CN
+  2017-05-16 15:01:18  [ main:439 ] - [ DEBUG ]   peer alternative names: [*.baidu.com, *.baifubao.com, *.bdstatic.com, *.hao123.com, *.nuomi.com, *.bce.baidu.com, *.eyun.baidu.com, *.map.baidu.com, baidu.com, baifubao.com, www.baidu.cn, www.baidu.com.cn, click.hm.baidu.com, log.hm.baidu.com, cm.pos.baidu.com, wn.pos.baidu.com, update.pan.baidu.com, mct.y.nuomi.com]
+  2017-05-16 15:01:18  [ main:439 ] - [ DEBUG ]   issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  2017-05-16 15:01:18  [ main:443 ] - [ DEBUG ]  Connection established 10.1.16.24:7306<->61.135.169.125:443
+  2017-05-16 15:01:18  [ main:443 ] - [ DEBUG ]  Executing request GET / HTTP/1.1
+  2017-05-16 15:01:18  [ main:444 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+  2017-05-16 15:01:18  [ main:444 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+  2017-05-16 15:01:18  [ main:446 ] - [ DEBUG ]  http-outgoing-0 >> GET / HTTP/1.1
+  2017-05-16 15:01:18  [ main:446 ] - [ DEBUG ]  http-outgoing-0 >> Host: www.baidu.com
+  2017-05-16 15:01:18  [ main:447 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+  2017-05-16 15:01:18  [ main:447 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+  2017-05-16 15:01:18  [ main:447 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+  2017-05-16 15:01:18  [ main:447 ] - [ DEBUG ]  http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+  2017-05-16 15:01:18  [ main:448 ] - [ DEBUG ]  http-outgoing-0 >> "Host: www.baidu.com[\r][\n]"
+  2017-05-16 15:01:18  [ main:448 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+  2017-05-16 15:01:18  [ main:448 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+  2017-05-16 15:01:18  [ main:448 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+  2017-05-16 15:01:18  [ main:448 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+  2017-05-16 15:01:18  [ main:457 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+  2017-05-16 15:01:18  [ main:458 ] - [ DEBUG ]  http-outgoing-0 << "Server: bfe/1.0.8.18[\r][\n]"
+  2017-05-16 15:01:18  [ main:458 ] - [ DEBUG ]  http-outgoing-0 << "Date: Tue, 16 May 2017 07:01:20 GMT[\r][\n]"
+  2017-05-16 15:01:18  [ main:459 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+  2017-05-16 15:01:18  [ main:459 ] - [ DEBUG ]  http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+  2017-05-16 15:01:18  [ main:459 ] - [ DEBUG ]  http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+  2017-05-16 15:01:18  [ main:459 ] - [ DEBUG ]  http-outgoing-0 << "Last-Modified: Mon, 23 Jan 2017 13:23:49 GMT[\r][\n]"
+  2017-05-16 15:01:18  [ main:460 ] - [ DEBUG ]  http-outgoing-0 << "Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform[\r][\n]"
+  2017-05-16 15:01:18  [ main:460 ] - [ DEBUG ]  http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+  2017-05-16 15:01:18  [ main:460 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/[\r][\n]"
+  2017-05-16 15:01:18  [ main:461 ] - [ DEBUG ]  http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+  2017-05-16 15:01:18  [ main:461 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: __bsi=15999222390192071565_00_45_N_N_1_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 07:01:25 GMT; domain=www.baidu.com; path=/[\r][\n]"
+  2017-05-16 15:01:18  [ main:461 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 15:01:18  [ main:464 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 200 OK
+  2017-05-16 15:01:18  [ main:465 ] - [ DEBUG ]  http-outgoing-0 << Server: bfe/1.0.8.18
+  2017-05-16 15:01:18  [ main:465 ] - [ DEBUG ]  http-outgoing-0 << Date: Tue, 16 May 2017 07:01:20 GMT
+  2017-05-16 15:01:18  [ main:465 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: text/html
+  2017-05-16 15:01:18  [ main:465 ] - [ DEBUG ]  http-outgoing-0 << Transfer-Encoding: chunked
+  2017-05-16 15:01:18  [ main:466 ] - [ DEBUG ]  http-outgoing-0 << Connection: keep-alive
+  2017-05-16 15:01:18  [ main:466 ] - [ DEBUG ]  http-outgoing-0 << Last-Modified: Mon, 23 Jan 2017 13:23:49 GMT
+  2017-05-16 15:01:18  [ main:466 ] - [ DEBUG ]  http-outgoing-0 << Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  2017-05-16 15:01:18  [ main:466 ] - [ DEBUG ]  http-outgoing-0 << Pragma: no-cache
+  2017-05-16 15:01:18  [ main:467 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/
+  2017-05-16 15:01:18  [ main:467 ] - [ DEBUG ]  http-outgoing-0 << Content-Encoding: gzip
+  2017-05-16 15:01:18  [ main:467 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: __bsi=15999222390192071565_00_45_N_N_1_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 07:01:25 GMT; domain=www.baidu.com; path=/
+  2017-05-16 15:01:18  [ main:475 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+  2017-05-16 15:01:18  [ main:478 ] - [ DEBUG ]  Cookie accepted [BDORZ="27315", version:0, domain:baidu.com, path:/, expiry:null]
+  2017-05-16 15:01:18  [ main:484 ] - [ DEBUG ]  Cookie accepted [__bsi="15999222390192071565_00_45_N_N_1_0303_C02F_N_N_N_0", version:0, domain:www.baidu.com, path:/, expiry:Tue May 16 15:01:25 CST 2017]
+  2017-05-16 15:01:18  [ main:489 ] - [ DEBUG ]  http-outgoing-0 << "499[\r][\n]"
+  2017-05-16 15:01:18  [ main:490 ] - [ DEBUG ]  http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d]Vok[0xdb]F[0x18]_[0xe8]w[0xb8]j$i[0x9][0xb6]b[0x9b][0xd0],[0x96][0x14][0xbc]4[0x83]PX[0xcb][0x9a][0xc0][0xf2][0xca][0x9c][0xa4][0x93]u[0x89][0xa4]Su'+[0xee][0xab][0x5][0xd6][0xb1][0xb1]u[0xd9][0xe8][0xfe][0xb0]u[0xb0]1[0xb6]f/[0x6][0xcd]X`%][0xda]/c[0xa5][0xc9][0xab]}[0x85]='[0x9d]c;q[0xe8][0x8c]A[0xba][0xe7][0x9e][0xfb]=[0xbf][0xe7][0xef][0xc9][0xb8]v[0xeb][0xce][0xf2][0xda][0xc6][0xdd][0x15][0xe4][0x8b]0[0xb0][0xae]^1[0xae]U*[0xf7][0xd6]Zk[0xeb][0xf7][0xd0][0x9d][0xdb][0x95][0x8a]e[0x14]rd[0xf8][0x4][0xbb][0x96][0x11][0x12][0x81]AS[0xc4][0x15]r?[0xa5]][0xd3]a[0x91] [0x91][0xa8][0x88]^L[0x90]Z[0x98][0x82]l[0xb]][0x1e]k:>N8[0x11]f*[0xbc][0xca][0xc2][0xc5][0xd3][0x1f]T[0xd6][[0x95]e[0x16][0xc6]XP;[0x18][0x2][0xac][0xae][0x98]+n[0x87][0xa8][0x3][0x3]X[0x1c]d[0xb8][0xc7]Q[0x84]Cb&[0xc4]#IB[0x12][0xcb][0x8]h[0xb4][0x85][0x12][0x12][0x98]\[0xf4][0x2][0xc2]}B[0x4][0x92]lJ[0x16][0xe][0xe7][0xc8][0x7]eSr[0xe6][0x8b][0xba][0xce]y[0xad]j[0xbb]\[0x80]E[0xa7][0xea][0xb0]P[0x9f]'[0xef][0xd5][0xec][0xcd][0xfb][0xb][0xad][0xd6][0xfa]FX[0xd0]a[0x1b][0x8d][0xdb]z[0xa2]gY[0xa6];[0xd8][0xf1][0x89]n[0xbb],y[0xa0][0xdb][0x98][0xba]i5[0xa4]Q[0x15] -CP[0x11][0x10][0xeb][0xf5][0xf7]/[0xf3][0xc3][0xa7][0xfd][0xe7][0x1f][0xf6][0x9f][0xf6][0xef]?[0x9f][0xf7][0x8f]~[0xce][0xf7][0xff]|[0xfd][0xd3]o[0xa7];[0x8f][\r][0xbd]T1[0xf4]"p[0xc8][0xb0][0x99][0xdb]C[0x92][0xac][0xf9][0xd6][0x1c][0xfc][0x1c][0xc7]B[0x86]K[0xbb][0x88][0xba]f[0x96][0xe0]8[0x6]_[0xce][0x4][0xea][0x88][0xdc]v[0x2][0xcc][0xb9])[0x5][0xed]q[0xb5]r[0x83][0xb7]=[0x96][0x84][0xea][0xe4][0xa8][0xe8][0x9c]6X[0x9]:[0xa0]F[0xc3][0xe][0xf2][0xa9]K<[0xe6][0xa4][0xdc][0x14]IJ[0x10]O[0x1c]S[0x97][0xfe]VK[0x1f]eP@[\r][0xfc]n[0x7][0xac][0xc3]j[0xd5]8[0xea][0xa0][0x8c][0xba][0xc2]7[0xeb]7[0xe7][0x90]Oh[0xc7][0x17]f[0xad][0xfe]6[0xc0][0xe9]@[0x11][0x1e][0x92][0x83]t[0xa4]x[0x16][0xf9][0xf1][0x10]v[0x4]e[0xd1][0x5]d[0xae]<[0xf2]$i[0x1a][0xc5][0xa9][0xca][0x16][0x90]rIT&[0xb7][0x88]x[0x1b]x[0x10][0xd4][0xc5]AJ[0xcc][0xda][0xe5][0xba]t[0xa0]S[0x96][0xd8][0xa5][0x98][0x9e][0x82]Z[0xb8][0x1c]*[0xe1][0xdd][0xb6][0x1d][0xbf][0xd9][0xa4][0xd4][0xa3][0xee][0xf6][0x9b][0x15]E[0xa4]t[0x8a][0xc0]Z[0x6][0x8f]q[0xa4][0xdc][0xd7][0xec][0xe][0xe2]m[0x1a][0xb][0xc8][0x93]f[0xa9]@@[0x4][0xb7][0xb2]2[0x4][0x99][0xab][0x14][0xb][0xa5][0x12][0x6][0x85]x; QG&b~[0x1e][0xe1]T0[0x88]Q[0x1c][0x10]AL[0xe6]A[0xc4]AP[0xe6][0xf5][0xec][0xcd]2tit[0x82]i[D[0xa3][0xa6][0x8b][0x8e][0xe1][0xa9][0x1d]R![0x13][0xc9]S[0xc5]|[0xb4][0xc2][0xc7][0xa8][0xc3]ymhq`[0x7]*B[0xd5][0xa3][0xaa][0xc][0xf5]P[0x85][0x9e][0xca]D[0xc2][0xfc][0x18]4$[0xf4]cD2>,[0xbc][0xd2]y[0xb1][0xd9][0x16][0x89][0xdc]P[0x16][0xc3][0x8]w[0xad][0xe3]o[0xf7]O[0xbf]{a[0xe8]x[0x1c]B[0xf6][0xb4][0xac]][0x1f][0xb3]Z[0xbd]!;z[0x4][0xa3][0x14][0x8e][0xa2][0x94][0x92][0xb]([0x0][0x12][0xe2]x"[0xf][0x90][0x8f][0x2][0xe4]?[0xee][0xe7]O^N[0x2][0xe8]N<[0xde][0x85]fc[0xa3][0x0]'{[0x1f][0x9f][0xfe][0xf2][0xd5]$[0x0]A[0x89][0x8d]'[0x82][0x14];c [0x7][0x7][0xf9][0x97]{%H[0xc4][0xb8][0x93]@%[0x8d][0xc7]E[0x85]e[0xd8][0xd2][0xe5][0x18][0x83][0x8e][0x86][0x11][0xd6][0xa1][0xde]R[0xf1]6[0x8d][0xc3][0xb8])[0xe2][0xc0][0xc][0xa3][0xe2]5-[0xe6][0xe4]T[0xa3]5U[0x17][0xfe]cCa[0xaa][0xee]M5[0xbc]aoN5[0xdc][0xda]Y[0xac][0xb]4[0xc5]0[0xb0]a0[0xbe][0xc8][0x8f][0xbe])[0xf9][0xe9]#[0x4][0x15]S[0x17][0xa6]O[0x8][0xd7]F5K[0xa8] [0xd7]g[0x6]5[0xa1][0xc9])[0xfd]?[0x99]+[0xd6][0xa9]93[0x8b]H[0xe4]0[0x97][0xac][0xbf][0xbf][0xba][0xc][0xfd][0xc0]"@[0xbe][0x9e][0xd1][0xc8]eY5`[0xe]Lz[0x16]Ue[0xcd][0xcd][0xa2][0xb]bNp[0xe2][0xf8][0xc8]4M[0xa4]ih[0x9]iK[0x1a]ZD[0xda][0xb4]vc[0x16]iC_[0xcd][0x9a][0x14][0xcc]h[0xa5][0xbf][0x1a][0x14]h[0xe1][0xb0][0xa6]<[0xd6][0x2][[0x1b][0xf1]y[0xe6]F[0xf3][0xea][0x15]t[0xee][0x7][0x9d]x.M[0xe7][0x87]n[0xc8][0x12][0xa2][0x9f]E[0xd4]N([0x85][0x9b]OY[0x80][0x15]*.8Ss)[0x8f][0x3][0xdc][D68[0xb7][0xd5][0xd4][0xac][0xe3]'[0x7][0xf9][0xaf]?[0xf4][0xf][0xf7][0xf2][0xc7];*[0xe4][0xe5]X[0x9e][0xd8][0x83][0x9e]Xf[0x11][0xd4][0x8a]j[0xc9]b[0x99][0xc1]:[0x96]}[0x1f][0xf8][0x17][0xaa][0xc8][0x87]1<,J+[0xf8]W[0xff][0xf0][0x8b]r,L*b[0x9a][0x8c]([0xb7]l[0x6][0xf3][0xfd][0x1d]yu*b[0xf1][0xc0][0x92][0x13][[0xd3][0xe][0x8b]{[0xcd][0xfa]\[0xed][0xe6]td[0xf3][0xb8]Y[0xe8][0x95][0xaf][0x83][0x82][0x98]X[0xf]n*z[0xba][0xd5]?z[0xf5][0xfa][0xeb][0xdf]K"[0xf9][0xa7][0x8f][0xf2]W[0xf]O[0x9e][0x15][0xe3][0xa1]D8?g6)[0x8e]zt[0xc8]MW[0x81]u[0xe2][0x8a]G[0x88]kcg[0xcb]:[0xfe]h[0xf7]do'[0xdf]}t[0xfa][0xf4][0x13][0xc9][0xb7]D[0xea][0x1f][0xfe][0xb1][0xba]|[0xf7][0xe4][0xd9][0xce]\[0x3][0xa8]6[0xf2][0xdd][0xbf][0x7][0x16][0xe4]ez[0xd9][0xed][0xd9][0xe1][0xb2][0xcb][0xc0][][0xba]<[0x9e][0x89][0xc1]J~[0x12][0xc8]M[0xf5][0xe5][0xf5][0x1f]0[0xc][0x81][0x9a][0x8b][0x9][0x0][0x0][\r][\n]"
+  2017-05-16 15:01:18  [ main:492 ] - [ DEBUG ]  http-outgoing-0 << "0[\r][\n]"
+  2017-05-16 15:01:18  [ main:492 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 15:01:18  [ main:492 ] - [ DEBUG ]  Connection [id: 0][route: {s}->https://www.baidu.com:443] can be kept alive indefinitely
+  2017-05-16 15:01:18  [ main:492 ] - [ DEBUG ]  Connection released: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 15:18:46  [ main:0 ] - [ DEBUG ]  CookieSpec selected: default
+  2017-05-16 15:18:46  [ main:13 ] - [ DEBUG ]  Auth cache not set in the context
+  2017-05-16 15:18:46  [ main:15 ] - [ DEBUG ]  Connection request: [route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+  2017-05-16 15:18:46  [ main:33 ] - [ DEBUG ]  Connection leased: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 15:18:46  [ main:37 ] - [ DEBUG ]  Opening connection {s}->https://www.baidu.com:443
+  2017-05-16 15:18:46  [ main:67 ] - [ DEBUG ]  Connecting to www.baidu.com/61.135.169.125:443
+  2017-05-16 15:18:46  [ main:67 ] - [ DEBUG ]  Connecting socket to www.baidu.com/61.135.169.125:443 with timeout 0
+  2017-05-16 15:18:47  [ main:336 ] - [ DEBUG ]  Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+  2017-05-16 15:18:47  [ main:337 ] - [ DEBUG ]  Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+  2017-05-16 15:18:47  [ main:337 ] - [ DEBUG ]  Starting handshake
+  2017-05-16 15:18:47  [ main:397 ] - [ DEBUG ]  Secure session established
+  2017-05-16 15:18:47  [ main:397 ] - [ DEBUG ]   negotiated protocol: TLSv1.2
+  2017-05-16 15:18:47  [ main:398 ] - [ DEBUG ]   negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  2017-05-16 15:18:47  [ main:399 ] - [ DEBUG ]   peer principal: CN=baidu.com, OU=service operation department., O="BeiJing Baidu Netcom Science Technology Co., Ltd", L=beijing, ST=beijing, C=CN
+  2017-05-16 15:18:47  [ main:399 ] - [ DEBUG ]   peer alternative names: [*.baidu.com, *.baifubao.com, *.bdstatic.com, *.hao123.com, *.nuomi.com, *.bce.baidu.com, *.eyun.baidu.com, *.map.baidu.com, baidu.com, baifubao.com, www.baidu.cn, www.baidu.com.cn, click.hm.baidu.com, log.hm.baidu.com, cm.pos.baidu.com, wn.pos.baidu.com, update.pan.baidu.com, mct.y.nuomi.com]
+  2017-05-16 15:18:47  [ main:400 ] - [ DEBUG ]   issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  2017-05-16 15:18:47  [ main:403 ] - [ DEBUG ]  Connection established 10.1.16.24:7559<->61.135.169.125:443
+  2017-05-16 15:18:47  [ main:404 ] - [ DEBUG ]  Executing request GET / HTTP/1.1
+  2017-05-16 15:18:47  [ main:404 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+  2017-05-16 15:18:47  [ main:404 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+  2017-05-16 15:18:47  [ main:406 ] - [ DEBUG ]  http-outgoing-0 >> GET / HTTP/1.1
+  2017-05-16 15:18:47  [ main:406 ] - [ DEBUG ]  http-outgoing-0 >> Host: www.baidu.com
+  2017-05-16 15:18:47  [ main:406 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+  2017-05-16 15:18:47  [ main:406 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+  2017-05-16 15:18:47  [ main:406 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+  2017-05-16 15:18:47  [ main:407 ] - [ DEBUG ]  http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+  2017-05-16 15:18:47  [ main:407 ] - [ DEBUG ]  http-outgoing-0 >> "Host: www.baidu.com[\r][\n]"
+  2017-05-16 15:18:47  [ main:407 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+  2017-05-16 15:18:47  [ main:407 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+  2017-05-16 15:18:47  [ main:407 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+  2017-05-16 15:18:47  [ main:408 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+  2017-05-16 15:18:47  [ main:418 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+  2017-05-16 15:18:47  [ main:418 ] - [ DEBUG ]  http-outgoing-0 << "Server: bfe/1.0.8.18[\r][\n]"
+  2017-05-16 15:18:47  [ main:418 ] - [ DEBUG ]  http-outgoing-0 << "Date: Tue, 16 May 2017 07:18:48 GMT[\r][\n]"
+  2017-05-16 15:18:47  [ main:419 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+  2017-05-16 15:18:47  [ main:419 ] - [ DEBUG ]  http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+  2017-05-16 15:18:47  [ main:419 ] - [ DEBUG ]  http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+  2017-05-16 15:18:47  [ main:419 ] - [ DEBUG ]  http-outgoing-0 << "Last-Modified: Mon, 23 Jan 2017 13:23:49 GMT[\r][\n]"
+  2017-05-16 15:18:47  [ main:419 ] - [ DEBUG ]  http-outgoing-0 << "Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform[\r][\n]"
+  2017-05-16 15:18:47  [ main:420 ] - [ DEBUG ]  http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+  2017-05-16 15:18:47  [ main:420 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/[\r][\n]"
+  2017-05-16 15:18:47  [ main:420 ] - [ DEBUG ]  http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+  2017-05-16 15:18:47  [ main:420 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: __bsi=16686759827286728520_00_47_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 07:18:53 GMT; domain=www.baidu.com; path=/[\r][\n]"
+  2017-05-16 15:18:47  [ main:420 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 15:18:47  [ main:422 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 200 OK
+  2017-05-16 15:18:47  [ main:423 ] - [ DEBUG ]  http-outgoing-0 << Server: bfe/1.0.8.18
+  2017-05-16 15:18:47  [ main:423 ] - [ DEBUG ]  http-outgoing-0 << Date: Tue, 16 May 2017 07:18:48 GMT
+  2017-05-16 15:18:47  [ main:423 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: text/html
+  2017-05-16 15:18:47  [ main:423 ] - [ DEBUG ]  http-outgoing-0 << Transfer-Encoding: chunked
+  2017-05-16 15:18:47  [ main:423 ] - [ DEBUG ]  http-outgoing-0 << Connection: keep-alive
+  2017-05-16 15:18:47  [ main:424 ] - [ DEBUG ]  http-outgoing-0 << Last-Modified: Mon, 23 Jan 2017 13:23:49 GMT
+  2017-05-16 15:18:47  [ main:424 ] - [ DEBUG ]  http-outgoing-0 << Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  2017-05-16 15:18:47  [ main:424 ] - [ DEBUG ]  http-outgoing-0 << Pragma: no-cache
+  2017-05-16 15:18:47  [ main:424 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/
+  2017-05-16 15:18:47  [ main:424 ] - [ DEBUG ]  http-outgoing-0 << Content-Encoding: gzip
+  2017-05-16 15:18:47  [ main:424 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: __bsi=16686759827286728520_00_47_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 07:18:53 GMT; domain=www.baidu.com; path=/
+  2017-05-16 15:18:47  [ main:430 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+  2017-05-16 15:18:47  [ main:433 ] - [ DEBUG ]  Cookie accepted [BDORZ="27315", version:0, domain:baidu.com, path:/, expiry:null]
+  2017-05-16 15:18:47  [ main:441 ] - [ DEBUG ]  Cookie accepted [__bsi="16686759827286728520_00_47_N_N_2_0303_C02F_N_N_N_0", version:0, domain:www.baidu.com, path:/, expiry:Tue May 16 15:18:53 CST 2017]
+  2017-05-16 15:18:47  [ main:446 ] - [ DEBUG ]  http-outgoing-0 << "499[\r][\n]"
+  2017-05-16 15:18:47  [ main:447 ] - [ DEBUG ]  http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d]Vok[0xdb]F[0x18]_[0xe8]w[0xb8]j$i[0x9][0xb6]b[0x9b][0xd0],[0x96][0x14][0xbc]4[0x83]PX[0xcb][0x9a][0xc0][0xf2][0xca][0x9c][0xa4][0x93]u[0x89][0xa4]Su'+[0xee][0xab][0x5][0xd6][0xb1][0xb1]u[0xd9][0xe8][0xfe][0xb0]u[0xb0]1[0xb6]f/[0x6][0xcd]X`%][0xda]/c[0xa5][0xc9][0xab]}[0x85]='[0x9d]c;q[0xe8][0x8c]A[0xba][0xe7][0x9e][0xfb]=[0xbf][0xe7][0xef][0xc9][0xb8]v[0xeb][0xce][0xf2][0xda][0xc6][0xdd][0x15][0xe4][0x8b]0[0xb0][0xae]^1[0xae]U*[0xf7][0xd6]Zk[0xeb][0xf7][0xd0][0x9d][0xdb][0x95][0x8a]e[0x14]rd[0xf8][0x4][0xbb][0x96][0x11][0x12][0x81]AS[0xc4][0x15]r?[0xa5]][0xd3]a[0x91] [0x91][0xa8][0x88]^L[0x90]Z[0x98][0x82]l[0xb]][0x1e]k:>N8[0x11]f*[0xbc][0xca][0xc2][0xc5][0xd3][0x1f]T[0xd6][[0x95]e[0x16][0xc6]XP;[0x18][0x2][0xac][0xae][0x98]+n[0x87][0xa8][0x3][0x3]X[0x1c]d[0xb8][0xc7]Q[0x84]Cb&[0xc4]#IB[0x12][0xcb][0x8]h[0xb4][0x85][0x12][0x12][0x98]\[0xf4][0x2][0xc2]}B[0x4][0x92]lJ[0x16][0xe][0xe7][0xc8][0x7]eSr[0xe6][0x8b][0xba][0xce]y[0xad]j[0xbb]\[0x80]E[0xa7][0xea][0xb0]P[0x9f]'[0xef][0xd5][0xec][0xcd][0xfb][0xb][0xad][0xd6][0xfa]FX[0xd0]a[0x1b][0x8d][0xdb]z[0xa2]gY[0xa6];[0xd8][0xf1][0x89]n[0xbb],y[0xa0][0xdb][0x98][0xba]i5[0xa4]Q[0x15] -CP[0x11][0x10][0xeb][0xf5][0xf7]/[0xf3][0xc3][0xa7][0xfd][0xe7][0x1f][0xf6][0x9f][0xf6][0xef]?[0x9f][0xf7][0x8f]~[0xce][0xf7][0xff]|[0xfd][0xd3]o[0xa7];[0x8f][\r][0xbd]T1[0xf4]"p[0xc8][0xb0][0x99][0xdb]C[0x92][0xac][0xf9][0xd6][0x1c][0xfc][0x1c][0xc7]B[0x86]K[0xbb][0x88][0xba]f[0x96][0xe0]8[0x6]_[0xce][0x4][0xea][0x88][0xdc]v[0x2][0xcc][0xb9])[0x5][0xed]q[0xb5]r[0x83][0xb7]=[0x96][0x84][0xea][0xe4][0xa8][0xe8][0x9c]6X[0x9]:[0xa0]F[0xc3][0xe][0xf2][0xa9]K<[0xe6][0xa4][0xdc][0x14]IJ[0x10]O[0x1c]S[0x97][0xfe]VK[0x1f]eP@[\r][0xfc]n[0x7][0xac][0xc3]j[0xd5]8[0xea][0xa0][0x8c][0xba][0xc2]7[0xeb]7[0xe7][0x90]Oh[0xc7][0x17]f[0xad][0xfe]6[0xc0][0xe9]@[0x11][0x1e][0x92][0x83]t[0xa4]x[0x16][0xf9][0xf1][0x10]v[0x4]e[0xd1][0x5]d[0xae]<[0xf2]$i[0x1a][0xc5][0xa9][0xca][0x16][0x90]rIT&[0xb7][0x88]x[0x1b]x[0x10][0xd4][0xc5]AJ[0xcc][0xda][0xe5][0xba]t[0xa0]S[0x96][0xd8][0xa5][0x98][0x9e][0x82]Z[0xb8][0x1c]*[0xe1][0xdd][0xb6][0x1d][0xbf][0xd9][0xa4][0xd4][0xa3][0xee][0xf6][0x9b][0x15]E[0xa4]t[0x8a][0xc0]Z[0x6][0x8f]q[0xa4][0xdc][0xd7][0xec][0xe][0xe2]m[0x1a][0xb][0xc8][0x93]f[0xa9]@@[0x4][0xb7][0xb2]2[0x4][0x99][0xab][0x14][0xb][0xa5][0x12][0x6][0x85]x; QG&b~[0x1e][0xe1]T0[0x88]Q[0x1c][0x10]AL[0xe6]A[0xc4]AP[0xe6][0xf5][0xec][0xcd]2tit[0x82]i[D[0xa3][0xa6][0x8b][0x8e][0xe1][0xa9][0x1d]R![0x13][0xc9]S[0xc5]|[0xb4][0xc2][0xc7][0xa8][0xc3]ymhq`[0x7]*B[0xd5][0xa3][0xaa][0xc][0xf5]P[0x85][0x9e][0xca]D[0xc2][0xfc][0x18]4$[0xf4]cD2>,[0xbc][0xd2]y[0xb1][0xd9][0x16][0x89][0xdc]P[0x16][0xc3][0x8]w[0xad][0xe3]o[0xf7]O[0xbf]{a[0xe8]x[0x1c]B[0xf6][0xb4][0xac]][0x1f][0xb3]Z[0xbd]!;z[0x4][0xa3][0x14][0x8e][0xa2][0x94][0x92][0xb]([0x0][0x12][0xe2]x"[0xf][0x90][0x8f][0x2][0xe4]?[0xee][0xe7]O^N[0x2][0xe8]N<[0xde][0x85]fc[0xa3][0x0]'{[0x1f][0x9f][0xfe][0xf2][0xd5]$[0x0]A[0x89][0x8d]'[0x82][0x14];c [0x7][0x7][0xf9][0x97]{%H[0xc4][0xb8][0x93]@%[0x8d][0xc7]E[0x85]e[0xd8][0xd2][0xe5][0x18][0x83][0x8e][0x86][0x11][0xd6][0xa1][0xde]R[0xf1]6[0x8d][0xc3][0xb8])[0xe2][0xc0][0xc][0xa3][0xe2]5-[0xe6][0xe4]T[0xa3]5U[0x17][0xfe]cCa[0xaa][0xee]M5[0xbc]aoN5[0xdc][0xda]Y[0xac][0xb]4[0xc5]0[0xb0]a0[0xbe][0xc8][0x8f][0xbe])[0xf9][0xe9]#[0x4][0x15]S[0x17][0xa6]O[0x8][0xd7]F5K[0xa8] [0xd7]g[0x6]5[0xa1][0xc9])[0xfd]?[0x99]+[0xd6][0xa9]93[0x8b]H[0xe4]0[0x97][0xac][0xbf][0xbf][0xba][0xc][0xfd][0xc0]"@[0xbe][0x9e][0xd1][0xc8]eY5`[0xe]Lz[0x16]Ue[0xcd][0xcd][0xa2][0xb]bNp[0xe2][0xf8][0xc8]4M[0xa4]ih[0x9]iK[0x1a]ZD[0xda][0xb4]vc[0x16]iC_[0xcd][0x9a][0x14][0xcc]h[0xa5][0xbf][0x1a][0x14]h[0xe1][0xb0][0xa6]<[0xd6][0x2][[0x1b][0xf1]y[0xe6]F[0xf3][0xea][0x15]t[0xee][0x7][0x9d]x.M[0xe7][0x87]n[0xc8][0x12][0xa2][0x9f]E[0xd4]N([0x85][0x9b]OY[0x80][0x15]*.8Ss)[0x8f][0x3][0xdc][D68[0xb7][0xd5][0xd4][0xac][0xe3]'[0x7][0xf9][0xaf]?[0xf4][0xf][0xf7][0xf2][0xc7];*[0xe4][0xe5]X[0x9e][0xd8][0x83][0x9e]Xf[0x11][0xd4][0x8a]j[0xc9]b[0x99][0xc1]:[0x96]}[0x1f][0xf8][0x17][0xaa][0xc8][0x87]1<,J+[0xf8]W[0xff][0xf0][0x8b]r,L*b[0x9a][0x8c]([0xb7]l[0x6][0xf3][0xfd][0x1d]yu*b[0xf1][0xc0][0x92][0x13][[0xd3][0xe][0x8b]{[0xcd][0xfa]\[0xed][0xe6]td[0xf3][0xb8]Y[0xe8][0x95][0xaf][0x83][0x82][0x98]X[0xf]n*z[0xba][0xd5]?z[0xf5][0xfa][0xeb][0xdf]K"[0xf9][0xa7][0x8f][0xf2]W[0xf]O[0x9e][0x15][0xe3][0xa1]D8?g6)[0x8e]zt[0xc8]MW[0x81]u[0xe2][0x8a]G[0x88]kcg[0xcb]:[0xfe]h[0xf7]do'[0xdf]}t[0xfa][0xf4][0x13][0xc9][0xb7]D[0xea][0x1f][0xfe][0xb1][0xba]|[0xf7][0xe4][0xd9][0xce]\[0x3][0xa8]6[0xf2][0xdd][0xbf][0x7][0x16][0xe4]ez[0xd9][0xed][0xd9][0xe1][0xb2][0xcb][0xc0][][0xba]<[0x9e][0x89][0xc1]J~[0x12][0xc8]M[0xf5][0xe5][0xf5][0x1f]0[0xc][0x81][0x9a][0x8b][0x9][0x0][0x0][\r][\n]"
+  2017-05-16 15:18:47  [ main:449 ] - [ DEBUG ]  http-outgoing-0 << "0[\r][\n]"
+  2017-05-16 15:18:47  [ main:449 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 15:18:47  [ main:450 ] - [ DEBUG ]  Connection [id: 0][route: {s}->https://www.baidu.com:443] can be kept alive indefinitely
+  2017-05-16 15:18:47  [ main:450 ] - [ DEBUG ]  Connection released: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 15:19:06  [ main:0 ] - [ DEBUG ]  CookieSpec selected: default
+  2017-05-16 15:19:06  [ main:17 ] - [ DEBUG ]  Auth cache not set in the context
+  2017-05-16 15:19:06  [ main:18 ] - [ DEBUG ]  Connection request: [route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+  2017-05-16 15:19:06  [ main:37 ] - [ DEBUG ]  Connection leased: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+  2017-05-16 15:19:06  [ main:40 ] - [ DEBUG ]  Opening connection {s}->https://www.baidu.com:443
+  2017-05-16 15:19:06  [ main:47 ] - [ DEBUG ]  Connecting to www.baidu.com/61.135.169.125:443
+  2017-05-16 15:19:06  [ main:48 ] - [ DEBUG ]  Connecting socket to www.baidu.com/61.135.169.125:443 with timeout 0
+  2017-05-16 15:19:07  [ main:484 ] - [ DEBUG ]  Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+  2017-05-16 15:19:07  [ main:484 ] - [ DEBUG ]  Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+  2017-05-16 15:19:07  [ main:485 ] - [ DEBUG ]  Starting handshake
+  2017-05-16 15:19:07  [ main:556 ] - [ DEBUG ]  Secure session established
+  2017-05-16 15:19:07  [ main:557 ] - [ DEBUG ]   negotiated protocol: TLSv1.2
+  2017-05-16 15:19:07  [ main:557 ] - [ DEBUG ]   negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  2017-05-16 15:19:07  [ main:558 ] - [ DEBUG ]   peer principal: CN=baidu.com, OU=service operation department., O="BeiJing Baidu Netcom Science Technology Co., Ltd", L=beijing, ST=beijing, C=CN
+  2017-05-16 15:19:07  [ main:558 ] - [ DEBUG ]   peer alternative names: [*.baidu.com, *.baifubao.com, *.bdstatic.com, *.hao123.com, *.nuomi.com, *.bce.baidu.com, *.eyun.baidu.com, *.map.baidu.com, baidu.com, baifubao.com, www.baidu.cn, www.baidu.com.cn, click.hm.baidu.com, log.hm.baidu.com, cm.pos.baidu.com, wn.pos.baidu.com, update.pan.baidu.com, mct.y.nuomi.com]
+  2017-05-16 15:19:07  [ main:558 ] - [ DEBUG ]   issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  2017-05-16 15:19:07  [ main:564 ] - [ DEBUG ]  Connection established 10.1.16.24:7565<->61.135.169.125:443
+  2017-05-16 15:19:07  [ main:565 ] - [ DEBUG ]  Executing request GET / HTTP/1.1
+  2017-05-16 15:19:07  [ main:565 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+  2017-05-16 15:19:07  [ main:566 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+  2017-05-16 15:19:07  [ main:568 ] - [ DEBUG ]  http-outgoing-0 >> GET / HTTP/1.1
+  2017-05-16 15:19:07  [ main:568 ] - [ DEBUG ]  http-outgoing-0 >> Host: www.baidu.com
+  2017-05-16 15:19:07  [ main:568 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+  2017-05-16 15:19:07  [ main:569 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+  2017-05-16 15:19:07  [ main:569 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+  2017-05-16 15:19:07  [ main:569 ] - [ DEBUG ]  http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+  2017-05-16 15:19:07  [ main:570 ] - [ DEBUG ]  http-outgoing-0 >> "Host: www.baidu.com[\r][\n]"
+  2017-05-16 15:19:07  [ main:570 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+  2017-05-16 15:19:07  [ main:573 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+  2017-05-16 15:19:07  [ main:573 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+  2017-05-16 15:19:07  [ main:573 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+  2017-05-16 15:19:07  [ main:583 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+  2017-05-16 15:19:07  [ main:584 ] - [ DEBUG ]  http-outgoing-0 << "Server: bfe/1.0.8.18[\r][\n]"
+  2017-05-16 15:19:07  [ main:584 ] - [ DEBUG ]  http-outgoing-0 << "Date: Tue, 16 May 2017 07:19:09 GMT[\r][\n]"
+  2017-05-16 15:19:07  [ main:584 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+  2017-05-16 15:19:07  [ main:585 ] - [ DEBUG ]  http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+  2017-05-16 15:19:07  [ main:585 ] - [ DEBUG ]  http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+  2017-05-16 15:19:07  [ main:585 ] - [ DEBUG ]  http-outgoing-0 << "Last-Modified: Mon, 23 Jan 2017 13:23:44 GMT[\r][\n]"
+  2017-05-16 15:19:07  [ main:586 ] - [ DEBUG ]  http-outgoing-0 << "Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform[\r][\n]"
+  2017-05-16 15:19:07  [ main:586 ] - [ DEBUG ]  http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+  2017-05-16 15:19:07  [ main:586 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/[\r][\n]"
+  2017-05-16 15:19:07  [ main:587 ] - [ DEBUG ]  http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+  2017-05-16 15:19:07  [ main:587 ] - [ DEBUG ]  http-outgoing-0 << "Set-Cookie: __bsi=13192250446428012803_00_58_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 07:19:14 GMT; domain=www.baidu.com; path=/[\r][\n]"
+  2017-05-16 15:19:07  [ main:588 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 15:19:07  [ main:594 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 200 OK
+  2017-05-16 15:19:07  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Server: bfe/1.0.8.18
+  2017-05-16 15:19:07  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Date: Tue, 16 May 2017 07:19:09 GMT
+  2017-05-16 15:19:07  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: text/html
+  2017-05-16 15:19:07  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Transfer-Encoding: chunked
+  2017-05-16 15:19:07  [ main:595 ] - [ DEBUG ]  http-outgoing-0 << Connection: keep-alive
+  2017-05-16 15:19:07  [ main:596 ] - [ DEBUG ]  http-outgoing-0 << Last-Modified: Mon, 23 Jan 2017 13:23:44 GMT
+  2017-05-16 15:19:07  [ main:596 ] - [ DEBUG ]  http-outgoing-0 << Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  2017-05-16 15:19:07  [ main:596 ] - [ DEBUG ]  http-outgoing-0 << Pragma: no-cache
+  2017-05-16 15:19:07  [ main:597 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/
+  2017-05-16 15:19:07  [ main:597 ] - [ DEBUG ]  http-outgoing-0 << Content-Encoding: gzip
+  2017-05-16 15:19:07  [ main:597 ] - [ DEBUG ]  http-outgoing-0 << Set-Cookie: __bsi=13192250446428012803_00_58_N_N_2_0303_C02F_N_N_N_0; expires=Tue, 16-May-17 07:19:14 GMT; domain=www.baidu.com; path=/
+  2017-05-16 15:19:07  [ main:606 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+  2017-05-16 15:19:07  [ main:611 ] - [ DEBUG ]  Cookie accepted [BDORZ="27315", version:0, domain:baidu.com, path:/, expiry:null]
+  2017-05-16 15:19:07  [ main:617 ] - [ DEBUG ]  Cookie accepted [__bsi="13192250446428012803_00_58_N_N_2_0303_C02F_N_N_N_0", version:0, domain:www.baidu.com, path:/, expiry:Tue May 16 15:19:14 CST 2017]
+  2017-05-16 15:19:07  [ main:622 ] - [ DEBUG ]  http-outgoing-0 << "499[\r][\n]"
+  2017-05-16 15:19:07  [ main:623 ] - [ DEBUG ]  http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d]Vok[0xdb]F[0x18]_[0xe8]w[0xb8]j$i[0x9][0xb6]b[0x9b][0xd0],[0x96][0x14][0xbc]4[0x83]PX[0xcb][0x9a][0xc0][0xf2][0xca][0x9c][0xa4][0x93]u[0x89][0xa4]Su'+[0xee][0xab][0x5][0xd6][0xb1][0xb1]u[0xd9][0xe8][0xfe][0xb0]u[0xb0]1[0xb6]f/[0x6][0xcd]X`%][0xda]/c[0xa5][0xc9][0xab]}[0x85]='[0x9d]c;q[0xe8][0x8c]A[0xba][0xe7][0x9e][0xfb]=[0xbf][0xe7][0xef][0xc9][0xb8]v[0xeb][0xce][0xf2][0xda][0xc6][0xdd][0x15][0xe4][0x8b]0[0xb0][0xae]^1[0xae]U*[0xf7][0xd6]Zk[0xeb][0xf7][0xd0][0x9d][0xdb][0x95][0x8a]e[0x14]rd[0xf8][0x4][0xbb][0x96][0x11][0x12][0x81]AS[0xc4][0x15]r?[0xa5]][0xd3]a[0x91] [0x91][0xa8][0x88]^L[0x90]Z[0x98][0x82]l[0xb]][0x1e]k:>N8[0x11]f*[0xbc][0xca][0xc2][0xc5][0xd3][0x1f]T[0xd6][[0x95]e[0x16][0xc6]XP;[0x18][0x2][0xac][0xae][0x98]+n[0x87][0xa8][0x3][0x3]X[0x1c]d[0xb8][0xc7]Q[0x84]Cb&[0xc4]#IB[0x12][0xcb][0x8]h[0xb4][0x85][0x12][0x12][0x98]\[0xf4][0x2][0xc2]}B[0x4][0x92]lJ[0x16][0xe][0xe7][0xc8][0x7]eSr[0xe6][0x8b][0xba][0xce]y[0xad]j[0xbb]\[0x80]E[0xa7][0xea][0xb0]P[0x9f]'[0xef][0xd5][0xec][0xcd][0xfb][0xb][0xad][0xd6][0xfa]FX[0xd0]a[0x1b][0x8d][0xdb]z[0xa2]gY[0xa6];[0xd8][0xf1][0x89]n[0xbb],y[0xa0][0xdb][0x98][0xba]i5[0xa4]Q[0x15] -CP[0x11][0x10][0xeb][0xf5][0xf7]/[0xf3][0xc3][0xa7][0xfd][0xe7][0x1f][0xf6][0x9f][0xf6][0xef]?[0x9f][0xf7][0x8f]~[0xce][0xf7][0xff]|[0xfd][0xd3]o[0xa7];[0x8f][\r][0xbd]T1[0xf4]"p[0xc8][0xb0][0x99][0xdb]C[0x92][0xac][0xf9][0xd6][0x1c][0xfc][0x1c][0xc7]B[0x86]K[0xbb][0x88][0xba]f[0x96][0xe0]8[0x6]_[0xce][0x4][0xea][0x88][0xdc]v[0x2][0xcc][0xb9])[0x5][0xed]q[0xb5]r[0x83][0xb7]=[0x96][0x84][0xea][0xe4][0xa8][0xe8][0x9c]6X[0x9]:[0xa0]F[0xc3][0xe][0xf2][0xa9]K<[0xe6][0xa4][0xdc][0x14]IJ[0x10]O[0x1c]S[0x97][0xfe]VK[0x1f]eP@[\r][0xfc]n[0x7][0xac][0xc3]j[0xd5]8[0xea][0xa0][0x8c][0xba][0xc2]7[0xeb]7[0xe7][0x90]Oh[0xc7][0x17]f[0xad][0xfe]6[0xc0][0xe9]@[0x11][0x1e][0x92][0x83]t[0xa4]x[0x16][0xf9][0xf1][0x10]v[0x4]e[0xd1][0x5]d[0xae]<[0xf2]$i[0x1a][0xc5][0xa9][0xca][0x16][0x90]rIT&[0xb7][0x88]x[0x1b]x[0x10][0xd4][0xc5]AJ[0xcc][0xda][0xe5][0xba]t[0xa0]S[0x96][0xd8][0xa5][0x98][0x9e][0x82]Z[0xb8][0x1c]*[0xe1][0xdd][0xb6][0x1d][0xbf][0xd9][0xa4][0xd4][0xa3][0xee][0xf6][0x9b][0x15]E[0xa4]t[0x8a][0xc0]Z[0x6][0x8f]q[0xa4][0xdc][0xd7][0xec][0xe][0xe2]m[0x1a][0xb][0xc8][0x93]f[0xa9]@@[0x4][0xb7][0xb2]2[0x4][0x99][0xab][0x14][0xb][0xa5][0x12][0x6][0x85]x; QG&b~[0x1e][0xe1]T0[0x88]Q[0x1c][0x10]AL[0xe6]A[0xc4]AP[0xe6][0xf5][0xec][0xcd]2tit[0x82]i[D[0xa3][0xa6][0x8b][0x8e][0xe1][0xa9][0x1d]R![0x13][0xc9]S[0xc5]|[0xb4][0xc2][0xc7][0xa8][0xc3]ymhq`[0x7]*B[0xd5][0xa3][0xaa][0xc][0xf5]P[0x85][0x9e][0xca]D[0xc2][0xfc][0x18]4$[0xf4]cD2>,[0xbc][0xd2]y[0xb1][0xd9][0x16][0x89][0xdc]P[0x16][0xc3][0x8]w[0xad][0xe3]o[0xf7]O[0xbf]{a[0xe8]x[0x1c]B[0xf6][0xb4][0xac]][0x1f][0xb3]Z[0xbd]!;z[0x4][0xa3][0x14][0x8e][0xa2][0x94][0x92][0xb]([0x0][0x12][0xe2]x"[0xf][0x90][0x8f][0x2][0xe4]?[0xee][0xe7]O^N[0x2][0xe8]N<[0xde][0x85]fc[0xa3][0x0]'{[0x1f][0x9f][0xfe][0xf2][0xd5]$[0x0]A[0x89][0x8d]'[0x82][0x14];c [0x7][0x7][0xf9][0x97]{%H[0xc4][0xb8][0x93]@%[0x8d][0xc7]E[0x85]e[0xd8][0xd2][0xe5][0x18][0x83][0x8e][0x86][0x11][0xd6][0xa1][0xde]R[0xf1]6[0x8d][0xc3][0xb8])[0xe2][0xc0][0xc][0xa3][0xe2]5-[0xe6][0xe4]T[0xa3]5U[0x17][0xfe]cCa[0xaa][0xee]M5[0xbc]aoN5[0xdc][0xda]Y[0xac][0xb]4[0xc5]0[0xb0]a0[0xbe][0xc8][0x8f][0xbe])[0xf9][0xe9]#[0x4][0x15]S[0x17][0xa6]O[0x8][0xd7]F5K[0xa8] [0xd7]g[0x6]5[0xa1][0xc9])[0xfd]?[0x99]+[0xd6][0xa9]93[0x8b]H[0xe4]0[0x97][0xac][0xbf][0xbf][0xba][0xc][0xfd][0xc0]"@[0xbe][0x9e][0xd1][0xc8]eY5`[0xe]Lz[0x16]Ue[0xcd][0xcd][0xa2][0xb]bNp[0xe2][0xf8][0xc8]4M[0xa4]ih[0x9]iK[0x1a]ZD[0xda][0xb4]vc[0x16]iC_[0xcd][0x9a][0x14][0xcc]h[0xa5][0xbf][0x1a][0x14]h[0xe1][0xb0][0xa6]<[0xd6][0x2][[0x1b][0xf1]y[0xe6]F[0xf3][0xea][0x15]t[0xee][0x7][0x9d]x.M[0xe7][0x87]n[0xc8][0x12][0xa2][0x9f]E[0xd4]N([0x85][0x9b]OY[0x80][0x15]*.8Ss)[0x8f][0x3][0xdc][D68[0xb7][0xd5][0xd4][0xac][0xe3]'[0x7][0xf9][0xaf]?[0xf4][0xf][0xf7][0xf2][0xc7];*[0xe4][0xe5]X[0x9e][0xd8][0x83][0x9e]Xf[0x11][0xd4][0x8a]j[0xc9]b[0x99][0xc1]:[0x96]}[0x1f][0xf8][0x17][0xaa][0xc8][0x87]1<,J+[0xf8]W[0xff][0xf0][0x8b]r,L*b[0x9a][0x8c]([0xb7]l[0x6][0xf3][0xfd][0x1d]yu*b[0xf1][0xc0][0x92][0x13][[0xd3][0xe][0x8b]{[0xcd][0xfa]\[0xed][0xe6]td[0xf3][0xb8]Y[0xe8][0x95][0xaf][0x83][0x82][0x98]X[0xf]n*z[0xba][0xd5]?z[0xf5][0xfa][0xeb][0xdf]K"[0xf9][0xa7][0x8f][0xf2]W[0xf]O[0x9e][0x15][0xe3][0xa1]D8?g6)[0x8e]zt[0xc8]MW[0x81]u[0xe2][0x8a]G[0x88]kcg[0xcb]:[0xfe]h[0xf7]do'[0xdf]}t[0xfa][0xf4][0x13][0xc9][0xb7]D[0xea][0x1f][0xfe][0xb1][0xba]|[0xf7][0xe4][0xd9][0xce]\[0x3][0xa8]6[0xf2][0xdd][0xbf][0x7][0x16][0xe4]ez[0xd9][0xed][0xd9][0xe1][0xb2][0xcb][0xc0][][0xba]<[0x9e][0x89][0xc1]J~[0x12][0xc8]M[0xf5][0xe5][0xf5][0x1f]0[0xc][0x81][0x9a][0x8b][0x9][0x0][0x0][\r][\n]"
+  2017-05-16 15:19:07  [ main:624 ] - [ DEBUG ]  http-outgoing-0 << "0[\r][\n]"
+  2017-05-16 15:19:07  [ main:625 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+  2017-05-16 15:19:07  [ main:625 ] - [ DEBUG ]  Connection [id: 0][route: {s}->https://www.baidu.com:443] can be kept alive indefinitely
+  2017-05-16 15:19:07  [ main:625 ] - [ DEBUG ]  Connection released: [id: 0][route: {s}->https://www.baidu.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+  

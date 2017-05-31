@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="187" started-at="2017-05-27T03:46:06Z" finished-at="2017-05-27T03:46:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="187" started-at="2017-05-27T03:46:06Z" finished-at="2017-05-27T03:46:06Z">
+      <class name="com.yd.test.testcase.TestDemo">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.yd.test.testcase.TestDemo@3b084709]" name="setUp" is-config="true" duration-ms="1148" started-at="2017-05-27T11:46:05Z" finished-at="2017-05-27T11:46:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testMember()[pri:0, instance:com.yd.test.testcase.TestDemo@3b084709]" name="testMember" duration-ms="163" started-at="2017-05-27T11:46:06Z" finished-at="2017-05-27T11:46:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMember -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.yd.test.testcase.TestDemo@3b084709]" name="afterTest" is-config="true" duration-ms="100" started-at="2017-05-27T11:46:06Z" finished-at="2017-05-27T11:46:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.yd.test.testcase.TestDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

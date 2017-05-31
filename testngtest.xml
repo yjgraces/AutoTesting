@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="WebDiver自动化测试报告" allow-return-values="true">
+  <parameter name="maxRetries"  value="2"/>   
+  <test name="interfacetest">
+
+ <listeners>
+     <listener class-name="com.yd.test.tools.TestNGListener" /> 
+     <listener class-name="com.yd.test.tools.RetryListener" /> 
+  </listeners> 
+
+	<classes>    
+
+ 	 <class name="com.letvyidao.SystemDispatchOrderParameter"></class>	   	
+  </classes>
+  </test>
+</suite>

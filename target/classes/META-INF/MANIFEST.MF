@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: YD_UI_AutoTesting
+Implementation-Version: 1.0.1-SNAPSHOT
+Built-By: Administrator
+Compiler-Compliance-Level: 1.7
+Implementation-Vendor-Id: com.yd.test
+Build-Jdk: 1.8.0_111
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+

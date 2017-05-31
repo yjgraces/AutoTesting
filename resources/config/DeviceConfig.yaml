@@ -1,0 +1,50 @@
+DeviceList: 
+#T600
+- testDevice: T600
+  platformName: Android
+  platformVersion: 5.0.1
+  deviceName: 0123456789ABCDEF
+  appPackage: com.yongche
+  appActivity: com.yongche.ui.login.LoadingActivity
+  unicodeKeyboard: True
+  resetKeyboard: True
+  noReset: True
+  noSign: True
+  appName: V6.4.6-release.apk
+  port: 4723
+#Samsung  
+- testDevice: Samsung
+  platformName: Android
+  platformVersion: 6.0.1
+  deviceName: a4f1bc15
+  appPackage: com.yongche
+  appActivity: com.yongche.ui.login.LoadingActivity
+  unicodeKeyboard: True
+  resetKeyboard: True
+  noReset: True
+  noSign: True
+  appName: V6.4.6-release.apk
+  port: 4723
+
+  
+#IOS  
+- testDevice: IOS7
+  platformName: IOS
+  platformVersion: 10.2
+  uuid: 223ee6dccaefdd8e4d96c85a40462931d5fa6019
+  appPackage: com.yongche
+  appActivity: com.yongche.ui.login.LoadingActivity
+  unicodeKeyboard: True
+  resetKeyboard: True
+  appName: 6.4.5_dev.ipa
+  port: 4723
+  
+#Chrome浏览器
+- testDevice: Chrome
+  Browser: Chrome
+  Location: /resources/config/chromedriver.exe
+  ProfileName: default
+  ProfilePath: 
+  ImplicitlyWait: 30
+  WebDriverWait: 30
+  

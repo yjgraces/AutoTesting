@@ -1,0 +1,47 @@
+#模块名
+packageName: login
+host: https://testing.driver-api.yongche.org
+port: 80
+#测试接口任务列表
+taskList:
+- id: 1
+  #测试方法名
+  testName: uploadPhoto
+  #服务uri，注意带/
+  uri: /driver/UploadPhoto
+  methodType: post
+  #如果需要设置header，就写，不需要可以去掉
+  headers:
+    Authorization: OAuth oauth_consumer_key=\"2afdd89f5c6dbdc34542ab04933a091004eba18e2\",oauth_signature_method=\"PLAINTEXT\",x_auth_mode=\"client_auth\",oauth_version=\"1.0\",oauth_signature=\"5sARLGoVkNAPhh5wq1Hl95crWIk\"
+  #请求参数
+  paramsList:
+    - param1: 
+        imei: 353222063473333
+        cellphone: 16830163333
+        os_name: samsung-SM-G900F
+        os_version: 6.0.1
+        version: 259
+        x_auth_mode: client_auth
+        code_type: 1
+        area_code: 86
+        is_gzip: 1
+        city: 北京市
+        channel_source: 
+    - param2:
+        IMEI: IMEI22222222
+        userId: userId22222222222
+  filePath:
+     file1: /resources/testdata/data/3.jpg
+     file2: /resources/testdata/data/1.jpg
+- id: 2
+  #测试方法名
+  testName: testLogin
+  #服务uri，注意带/
+  uri: /login/two
+  methodType: get
+  #如果需要设置header，就写，不需要可以去掉
+  #请求参数
+  paramsList: 
+    - param1: 
+  filePath:
+  

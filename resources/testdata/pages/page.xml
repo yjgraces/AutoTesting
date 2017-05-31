@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+    <!--locator of page map info -->
+
+    <page pageName="homePage">
+        <!--Locator lists -->
+        <locator type="linkText" timeOut="3" value="车辆加盟">车辆加盟</locator>
+        <locator type="linkText" timeOut="3" value="集团用车服务">jituan</locator>
+    </page>
+    
+    <page pageName="qiyePage">
+        <!--Locator lists -->
+        <locator type="xpath" timeOut="3" value="//input[@id=\'login\']">login</locator>
+        <locator type="xpath" timeOut="3" value="//input[@id='verify_code']">verify_code</locator>
+    </page>
+   
+
+</map>

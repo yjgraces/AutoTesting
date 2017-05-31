@@ -1,0 +1,47 @@
+packageName: login2
+host: https://testing.driver-api.yongche.org
+taskList:
+- id: 1
+  testName: uploadPhoto
+  uri: /driver/UploadPhoto
+  methodType: post
+  headers:
+    Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+  params: 
+    imei: 353222063473333
+    cellphone: 16830163333
+    os_name: samsung-SM-G900F
+    os_version: 6.0.1
+    version: 259
+    x_auth_mode: client_auth
+    code_type: 1
+    area_code: 86
+    is_gzip: 1
+    city: 北京市
+    channel_source: ""
+  filePath:
+     file1: /resources/testdata/data/3.jpg
+     file2: /resources/testdata/data/1.jpg
+    
+- id: 3
+  #测试方法名  司机信息
+  testName: testMember
+  #服务uri，注意带/
+  uri: /driver/member
+  methodType: get
+  #如果需要设置header，就写，不需要可以去掉
+  headers:
+    Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+  #请求参数
+  params:
+    cellphone: 16820160309
+    code_type: 1
+    area_code: 86
+    imei: 353222063470309
+    version: 259
+    x_auth_mode: client_auth
+    is_gzip: 1
+    device_type: 1
+    os_name: samsung-SM-G900F
+    os_version: 6.0.1
+    city: 北京市 
